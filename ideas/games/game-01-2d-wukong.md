@@ -2,6 +2,10 @@
 
 ## Tóm tắt
 
+Tên (working title): **Dreams of the West: Wukong**
+
+Premise: một cậu bé bị ám ảnh bởi Tây Du Ký, mỗi đêm “mơ” mình là Ngộ Không. Người chơi bước vào giấc mơ đó và phải vượt qua các **kiếp nạn** bằng kỹ năng điều khiển và đọc pattern.
+
 Game mobile dạng **2.5D action platformer**: bạn điều khiển Ngộ Không vượt “ải ngắn” theo kiểu run-based, học pattern và **đánh boss**. Mỗi run tương ứng một chuỗi “kiếp nạn” (trial) trong tinh thần **81 kiếp nạn** (không cần bám 1-1 theo nguyên tác ngay từ đầu). Người chơi chết sẽ mất run nhưng giữ **meta progression** (mở kỹ năng/đồ/ngọc/phép) để đi sâu hơn.
 
 Điểm khác biệt: “Soulslike boss pattern” + “Roguelite build” trong format platformer 2.5D, gắn với khung **kiếp nạn** (trial rules) thay vì chỉ là map ngẫu nhiên.

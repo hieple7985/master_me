@@ -11,3 +11,4 @@
 - Expand `ideas/games/game-01-2d-wukong.md` into a structured one-pager (pillars, core loop, combat/build systems, 81 trials content structure, and Base + DLC scope breakdown).
 - Refine `ideas/games/game-01-2d-wukong.md` with confirmed direction (skill-based soulslike, ink brush art, premium buy-once) and recommended mainline chapter + side trials DLC structure for the “81 kiếp nạn” concept.
 - Add pricing + global forecast assumptions (B->A->C) and define the post-81 “thỉnh kinh” ending beat in `ideas/games/game-01-2d-wukong.md`.
+- Set working title to `Dreams of the West: Wukong` and add dream-premise intro in `ideas/games/game-01-2d-wukong.md`.
