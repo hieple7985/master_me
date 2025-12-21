@@ -161,28 +161,60 @@ Lộ trình platform:
 
 ## 10. Định giá đề xuất (VN)
 
-Khung giá để bán (tuỳ kênh, support, độ “đau” của khách):
+Mô hình giá ưu tiên để dễ bán (offline-first): **license vĩnh viễn theo thiết bị** + add-on dịch vụ + bảo trì tuỳ chọn.
 
-- **Basic:** 990k – 2.9tr / thiết bị.
-- **Pro:** 2.9tr – 6.9tr / thiết bị.
-- **Team/Enterprise:** 9.9tr+ / nhóm (kèm triển khai, cấu hình, đào tạo).
+- **NoLai Basic (offline):** 1.490.000 VND / thiết bị (vĩnh viễn).
+- **NoLai Pro (workflow + report mạnh):** 2.990.000 VND / thiết bị (vĩnh viễn).
+- **Team/Enterprise:** tạm hoãn ở Phase 3 (khi có multi-user + audit + sync nâng cao).
+
+Bảo trì/nâng cấp (tuỳ chọn):
+
+- 499.000 – 999.000 VND / năm / thiết bị (fix + update + ưu tiên support).
 
 Add-on hợp lý:
 
-- Setup/import dữ liệu từ Excel: 1–5tr tuỳ khối lượng.
-- Bảo trì/nâng cấp: 15–25%/năm (tuỳ bạn có muốn recurring).
+- Import dữ liệu từ Excel + chuẩn hoá template: 500.000 – 3.000.000 VND.
+- Onboarding 1:1 (60–90 phút): 300.000 – 800.000 VND.
 
 ## 11. Đánh giá tiềm năng doanh thu (kịch bản)
 
-- **Bảo thủ:** 200 khách/năm × 2tr = ~400M/năm.
-- **Trung bình:** 1,000 khách/năm × 2–3tr = ~2–3 tỷ/năm.
-- **Tốt:** 2,000 khách/năm × 3–5tr = ~6–10 tỷ/năm.
+Kịch bản tham chiếu (tập trung ngách offline + mã hoá + chuyển từ Excel):
+
+- **90 ngày (khả thi cho solo):** 20 Basic + 10 Pro + add-on import/onboarding.
+  - License: 20 × 1.49tr + 10 × 2.99tr ≈ ~60tr.
+  - Add-on: ~10tr.
+  - **Tổng 90 ngày:** ~70tr.
+- **12 tháng (khả thi nếu có kênh CTV/đại lý):** 200 Basic + 100 Pro.
+  - License: 200 × 1.49tr + 100 × 2.99tr ≈ ~597tr.
+  - Add-on: ~84tr.
+  - Bảo trì (giả sử 30% mua gói 699k): ~63tr.
+  - **Tổng năm 1:** ~740tr.
 
 Điểm quyết định để “phủ rộng”:
 
 - Kênh phân phối (đại lý/cộng đồng/đối tác kế toán/cầm đồ).
 - Tài liệu + onboarding + support.
 - Niềm tin về bảo mật (offline + mã hoá mặc định).
+
+## 11.1 Update chiến lược (VN) – ngách & định vị ưu tiên
+
+Chọn hướng cạnh tranh tối ưu cho điều kiện solo:
+
+- **Ngách:** “Sổ công nợ/cho vay offline + mã hoá + chuyển đổi từ Excel”.
+- **Không đánh trực diện:** phần mềm cầm đồ dạng cloud + SMS/Email tự động (thị trường đã có người làm mạnh).
+- **Sync ưu tiên (Phase 1):** backup/restore file **đã mã hoá**; người dùng tự lưu vào Drive/iCloud/USB (user-controlled).
+
+Thông điệp marketing đề xuất:
+
+- “Sổ công nợ offline, dữ liệu nằm trong máy bạn.”
+- “Backup cũng mã hoá: lưu Drive chỉ là cất file, không ai đọc được.”
+- “Task list thu tiền hôm nay + tính lãi chuẩn + báo cáo 1 chạm.”
+
+Kênh bán khả thi nhất:
+
+- Nhóm Facebook/Zalo về sổ nợ/công nợ/bán chịu/cầm đồ (định vị “công nợ”, tránh ngôn ngữ nhạy cảm).
+- CTV/đại lý (hoa hồng 20–30%) trong hệ sinh thái POS/kế toán/tiệm.
+- Video demo 60–90 giây (1 flow end-to-end) để thay sales.
 
 ## 12. MVP plan (solo + production đóng gói)
 
