@@ -139,3 +139,100 @@ MVP đề xuất (Spa/Salon):
 2) Phỏng vấn 10-15 chủ cơ sở + 5-8 lễ tân/CSKH để chốt flow vận hành và dữ liệu tối thiểu cần ghi.
 3) Prototype nhanh màn hình lịch điều phối + thẻ liệu trình nâng cao.
 4) Pilot 2-3 cơ sở trong 4-6 tuần để đo: tỷ lệ lấp đầy lịch, tỷ lệ lỡ hẹn, doanh thu/nhân sự, thất thoát kho.
+
+## Mở rộng: Clinic (A) và Nha khoa (C)
+
+### A) Clinic thẩm mỹ / da liễu
+
+#### Đối thủ trực diện (VN)
+1) VNPT Home & Clinic
+- https://vnpt.vn/doanh-nghiep/tu-van/phan-mem-quan-ly-phong-kham.html
+
+2) EvoMed
+- https://evomed.vn/
+
+3) E-Clinic (EHIS / Song Ân)
+- https://ehis.vn/phan-mem-quan-ly-phong-kham-e-clinic/
+
+4) Phanmemphongkham.vn
+- https://phanmemphongkham.vn/
+
+5) KeToa.vn (phần mềm/giải pháp cho phòng khám)
+- Nguồn tổng hợp nhắc tên: https://medicrm.vn/tin-tuc/phan-mem-quan-ly-phong-kham-da-lieu/
+
+6) QAS (Phần mềm Y tế QAS)
+- Nguồn tổng hợp nhắc tên: https://medicrm.vn/tin-tuc/phan-mem-quan-ly-phong-kham-da-lieu/
+
+7) SUNS HIS
+- Nguồn tổng hợp nhắc tên: https://medicrm.vn/tin-tuc/phan-mem-quan-ly-phong-kham-da-lieu/
+
+8) YouMed Clinic
+- Nguồn tổng hợp nhắc tên: https://medicrm.vn/tin-tuc/phan-mem-quan-ly-phong-kham-da-lieu/
+
+#### Khoảng trống theo 3 trục
+Trục 1: Nghiệp vụ sâu (clinic-grade workflows)
+1) Hồ sơ điều trị thẩm mỹ theo phác đồ
+- Before/after (ảnh, timeline), chỉ định theo buổi, checklist biến chứng, lịch tái khám.
+
+2) Consent & form bắt buộc
+- Ký consent theo thủ thuật, lưu vết phiên bản form, truy xuất audit khi có khiếu nại.
+
+3) Quản trị vật tư/thuốc/vial theo lô-hạn dùng
+- Bóc tách tiêu hao theo ca điều trị, cảnh báo hết hạn, truy nguồn theo batch khi có sự cố.
+
+Trục 2: Marketing & attribution
+1) Từ lead → tư vấn → booking → điều trị
+- Theo dõi conversion theo từng bước (đến khám lần 1, mua gói, quay lại buổi 2/3/...).
+
+2) Attribution theo nhân sự tư vấn và kênh
+- Đo hiệu quả theo telesales/CSKH và nguồn lead, tránh “đổ công” sai.
+
+Trục 3: Chuỗi & compliance
+1) Phân quyền + audit trail chuẩn y tế
+- Ai xem/sửa hồ sơ, ai duyệt giảm giá/hoàn tiền, log thao tác với hồ sơ bệnh nhân.
+
+2) Vận hành chuỗi clinic
+- Chuyển ca điều trị giữa cơ sở, chuyển gói, chia doanh thu/hoa hồng theo vai trò.
+
+### C) Nha khoa
+
+#### Đối thủ trực diện (VN)
+1) SimlyDent
+- https://simlydent.vn
+
+2) DentalFlow
+- https://dentalflow.vn/
+
+3) Maydental
+- https://maydental.vn/
+
+4) Dentalsoft (DIP)
+- https://dip.vn/phan-mem-quan-ly-phong-kham-nha-khoa/
+
+5) oDental
+- Nguồn tổng hợp nhắc tên: https://maydental.vn/ (khu vực liên quan thị trường/đối thủ) và kết quả tìm kiếm: https://quanlyphongnha.vn/index_en.html
+
+#### Khoảng trống theo 3 trục
+Trục 1: Nghiệp vụ sâu (dental-specific)
+1) Kế hoạch điều trị + theo dõi theo răng
+- Chart theo răng/vùng, vật liệu, hẹn tái khám theo giai đoạn.
+
+2) Labo workflow
+- Phiếu labo, trạng thái (gửi/nhận/sửa), đối soát công nợ labo.
+
+3) Tài chính theo kế hoạch điều trị
+- Chia nhỏ thanh toán theo giai đoạn, theo bác sĩ, theo ca, quản lý công nợ minh bạch.
+
+Trục 2: Marketing & attribution
+1) Nhắc hẹn tái khám/CSKH theo phác đồ
+- Logic nhắc lịch theo điều trị thực tế (nhổ răng, implant, chỉnh nha) thay vì nhắc chung.
+
+2) Attribution theo dịch vụ giá trị cao
+- Đo ROI theo dịch vụ (implant/niềng) để tối ưu ngân sách và kịch bản tư vấn.
+
+Trục 3: Chuỗi & compliance
+1) Chuỗi nha khoa
+- Phân quyền đa cơ sở, chuẩn hóa bảng giá, chuyển hồ sơ giữa cơ sở.
+
+2) Audit & bảo mật dữ liệu y tế
+- Log truy cập hồ sơ, quy trình duyệt sửa thông tin điều trị/đơn thu.
