@@ -8,3 +8,5 @@
 - Add notes for perf gating by Android performance class, Telegram Stars compliance for digital goods, and analytics/measurement options in `opps/opp-06-earn-monkey.md`.
 - Expand `ideas/apps/app-01-listen-to-earn.md` into a one-pager spec (revenue model, token plan, anti-fraud, MVP roadmap).
 - Add sustainable operating defaults (payout cap by gross profit, tiered conversion, geo rollout) to `ideas/apps/app-01-listen-to-earn.md`.
+- Expand `ideas/games/game-01-2d-wukong.md` into a structured one-pager (pillars, core loop, combat/build systems, 81 trials content structure, and Base + DLC scope breakdown).
+- Refine `ideas/games/game-01-2d-wukong.md` with confirmed direction (skill-based soulslike, ink brush art, premium buy-once) and recommended mainline chapter + side trials DLC structure for the “81 kiếp nạn” concept.
