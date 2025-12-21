@@ -111,6 +111,41 @@ Mục tiêu: chọn các sản phẩm “đụng nhau” trực tiếp ở phân
  
 3) Audit & kiểm soát rủi ro
 - Nhật ký chỉnh sửa (ai sửa gì, lúc nào), quy trình duyệt giảm giá/hoàn tiền/đổi gói.
+
+## CSKH (wedge & market entry thesis)
+Mục tiêu của CSKH: biến “booking/CRM” từ tính năng nền thành hệ thống tăng trưởng có thể đo được.
+
+### Wedge vào thị trường (bán theo kết quả)
+1) Retention theo liệu trình/phác đồ
+- Tự động hóa nhắc hẹn + chăm sóc sau dịch vụ theo từng loại dịch vụ/liệu trình (khác với nhắc lịch chung).
+
+2) Lead → tư vấn → booking → đến → mua gói → quay lại
+- Gắn nguồn lead + trạng thái funnel + outcome cuộc gọi/tin nhắn, để chủ cơ sở nhìn được conversion theo từng bước.
+
+3) Attribution tối thiểu
+- Gán nguồn/kênh + gán người xử lý (telesales/CSKH) để đo hiệu suất và phân bổ thưởng/hoa hồng.
+
+### KPI bán được (để thương mại sớm)
+1) Giảm tỷ lệ lỡ hẹn
+2) Tăng tỷ lệ quay lại buổi 2/3 của liệu trình
+3) Tăng tỷ lệ tái mua/gia hạn gói
+4) Tăng conversion lead → đến cơ sở
+5) Minh bạch hiệu suất CSKH/telesales theo nguồn
+
+### Scope theo phases (đi production nhanh)
+Phase 1 (2-4 tuần):
+1) Pipeline CSKH tối thiểu (lead/inbox/call log) + gán người + SLA
+2) Nhắc lịch đa kênh ở mức “đủ dùng” (ưu tiên Zalo OA hoặc SMS)
+3) Báo cáo conversion cơ bản (lead → booking → đến)
+
+Phase 2 (4-8 tuần):
+1) Kịch bản CSKH theo dịch vụ/liệu trình (post-care, win-back)
+2) Attribution theo kênh + theo nhân sự
+3) Tự động hóa task cho CSKH (ai gọi lại, khi nào, checklist)
+
+Phase 3:
+1) Multi-branch + audit nâng cao
+2) Mở rộng sang Clinic thẩm mỹ/da liễu và Nha khoa với workflow chuyên khoa
  
 ## Beachhead đề xuất
 Spa/Salon (SMB và chuỗi nhỏ) có nhu cầu rõ ràng nhất ở 2 mảng:
