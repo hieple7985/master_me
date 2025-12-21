@@ -113,6 +113,14 @@ Gợi ý mapping số thứ tự (để bạn giữ cảm giác “81” mà kh�
 - DLC 3: mở **55–72**.
 - Phần còn lại **73–81** để dành cho expansion cuối hoặc free update nhỏ tuỳ sức.
 
+### Sau mốc 81: “thỉnh kinh” (ending / endgame)
+
+Sau khi người chơi mở và vượt đủ **81 trial nodes**, mở một chuỗi kết thúc ngắn (1 run đặc biệt):
+
+- “Đường thỉnh kinh”: 3-5 room liên tiếp, luật chơi “khắt khe” (ít heal, stamina regen chậm).
+- Boss/encounter cuối mang tính tổng hợp (đòi hỏi cả dodge + parry).
+- Reward là “Kinh”: mở **ending** + 1-2 meta unlock (cosmetic/title) và “endless trials” tuỳ sức.
+
 ## Thiết kế boss (khung chuẩn để sản xuất nhanh)
 
 Mỗi boss nên có:
@@ -150,13 +158,50 @@ Quy tắc solo-friendly:
 - **Premium mua 1 lần**: Base game là sản phẩm hoàn chỉnh.
 - DLC là **expansion trả phí** theo chương (mỗi chương thêm biome + boss + upgrades + 1 mechanic).
 
+## Pricing & forecast (B -> A -> C)
+
+Assumption:
+
+- Scope base: **B** (launch dày: 4-6 boss lớn).
+- Market: **A** (global / EN-first).
+- Quality bar: **C** (polish kiểu JP/KR).
+
+Pricing đề xuất:
+
+- Launch: **$4.99**.
+- Sale floor: **$2.99**.
+- DLC: **$2.99** mỗi chương.
+
+Forecast units (12 tháng, toàn cầu) cho Base:
+
+- Conservative: **60,000**
+- Base-case: **150,000**
+- Optimistic: **400,000**
+
+Ước lượng net về dev (rất thô, dùng ~65% giá bán để trừ store fee + VAT/hoàn tiền):
+
+- Base $4.99 -> **~$3.25 net/unit**.
+- DLC $2.99 -> **~$1.95 net/unit**.
+
+Attach rate DLC (thực dụng, giảm dần):
+
+- DLC1: **15%**
+- DLC2: **10%**
+- DLC3: **7%**
+
+Tổng net ước tính (Base + 3 DLC, 12 tháng):
+
+- Conservative (60k): **~$232k**
+- Base-case (150k): **~$581k**
+- Optimistic (400k): **~$1.55M**
+
 ## Scope breakdown (Base + DLC)
 
 ### Base Game (MVP)
 
 - 1 biome (1 tileset, 6-10 room types).
 - 1 nhân vật chơi (Ngộ Không) + 1 weapon core + 1 alternate stance.
-- 2 boss lớn + 3 mini-boss.
+- 4-6 boss lớn + 3-6 mini-boss.
 - 15-25 upgrades trong run (pháp/ngọc/di vật).
 - 1 talent tree meta (10-15 nodes).
 - 1 mode chính: Run-based.
