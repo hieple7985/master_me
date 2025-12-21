@@ -161,7 +161,11 @@ Gói bán (đề xuất):
 3) Add-on: SMS/Zalo phí tin nhắn + tích hợp kênh + báo cáo nâng cao
 
 ## Định giá & timeline nếu build riêng cho 1 chuỗi Spa da 5 cơ sở (VN + HN)
-Giả định: 5 cơ sở, có ads/leads, có đội CSKH/telesales, muốn funnel + nhắc hẹn + playbook + attribution.
+Giả định:
+ 1) 5 cơ sở, có ads/leads, có đội CSKH/telesales, muốn funnel + nhắc hẹn + playbook + attribution
+ 2) Ads spend: ~300 triệu VND/tháng
+ 3) Doanh số giả định: ~3 tỷ VND/tháng
+ 4) Quy mô nhân sự: up to ~50 nhân viên
 
 ### Scope phù hợp để giao hàng nhanh (production)
 1) CRM khách + timeline tương tác
@@ -194,6 +198,42 @@ Option B (nếu họ muốn “sở hữu” nhiều hơn, vẫn cần bạn v�
 Điểm chốt giá:
 1) Nếu cam kết KPI (giảm lỡ hẹn / tăng conversion), có thể định giá theo value cao hơn.
 2) Nếu họ cần tích hợp sâu (call center, ads, ERP), scope tăng và cần báo giá lại.
+
+ Gợi ý logic ROI để chốt deal (dựa trên giả định trên):
+ 1) Với ads 300tr/tháng, chỉ cần tăng hiệu quả tổng phễu thêm 5-10% đã tạo ra chênh lệch lớn.
+ 2) Với doanh số 3 tỷ/tháng, chỉ cần tăng doanh số ròng 1-2% hoặc giảm thất thoát tương đương đã đủ “cover” phí thuê bao.
+ 3) Vì vậy nên bán theo KPI đo được: lỡ hẹn, conversion lead→đến, conversion đến→mua gói, quay lại buổi 2/3.
+
+### Demo nên làm gì trước (để gắp dự án)
+Mục tiêu demo: cho họ thấy sau 10 phút dùng là trả lời được 3 câu hỏi:
+1) Lead đến từ đâu, đang nằm ở bước nào trong phễu?
+2) Ai đang xử lý lead/CSKH, có bị rơi lead không?
+3) Lỡ hẹn và tỷ lệ quay lại liệu trình đang thế nào theo cơ sở/kênh?
+
+Phần nên build trước (demo 1-2 tuần là đủ):
+1) Inbox/Lead pipeline (Kanban)
+- Trạng thái: New → Contacted → Booked → Arrived → Purchased → Follow-up/Win-back
+- Gán owner + SLA + nhắc việc
+
+2) Lead detail timeline
+- Log cuộc gọi/tin nhắn, ghi chú, tag dịch vụ quan tâm, hẹn lịch trực tiếp từ lead
+
+3) Booking tối thiểu + check-in
+- Chỉ cần: tạo lịch hẹn, đánh dấu đến/không đến, lý do no-show
+
+4) Attribution tối thiểu
+- Source/campaign (manual hoặc import file), chi nhánh, người xử lý
+
+5) Dashboard 1 trang
+- Lead count theo nguồn
+- Conversion từng bước
+- No-show rate
+- Tỷ lệ quay lại buổi 2/3 (nếu có dữ liệu)
+
+Nguyên tắc demo:
+1) Demo bằng data thật (import từ file) hoặc kết nối 1 kênh đơn giản, không demo “data giả”.
+2) Tối ưu trải nghiệm: thao tác nhanh, ít bước, tập trung vào insight và KPI.
+3) Chốt tiếp bằng rollout plan 6-8 tuần như phía trên.
 
 ### Kỳ vọng doanh thu cho bạn từ 1 khách kiểu này
 Năm 1 (1 chuỗi 5 cơ sở):
