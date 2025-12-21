@@ -167,9 +167,25 @@ Mô hình giá ưu tiên để dễ bán (offline-first): **license vĩnh viễn
 - **NoLai Pro (workflow + report mạnh):** 2.990.000 VND / thiết bị (vĩnh viễn).
 - **Team/Enterprise:** tạm hoãn ở Phase 3 (khi có multi-user + audit + sync nâng cao).
 
-Bảo trì/nâng cấp (tuỳ chọn):
+## 10.1 Bảo trì/nâng cấp (bao gồm cả update kỹ thuật + support)
 
-- 499.000 – 999.000 VND / năm / thiết bị (fix + update + ưu tiên support).
+Bảo trì là gói “đảm bảo dùng được lâu dài” cho app offline: vừa **update kỹ thuật**, vừa **hỗ trợ vận hành dữ liệu**.
+
+- **Maintenance Standard:** 499.000 VND / năm / thiết bị.
+  - Bugfix + ổn định + tương thích Android/iOS mới.
+  - Cập nhật bảo mật (vá thư viện/crypto khi cần).
+  - Hỗ trợ qua chat (best-effort trong giờ hành chính): hướng dẫn backup/restore, import/export, xử lý lỗi thường gặp.
+- **Maintenance Priority:** 999.000 VND / năm / thiết bị.
+  - Tất cả Standard.
+  - Ưu tiên xử lý ticket nhanh hơn.
+  - Hỗ trợ “cầm tay chỉ việc” cho các ca import/restore phức tạp (giới hạn theo số lần/tháng).
+
+Giới hạn/phạm vi không bao gồm (để tránh nổ scope):
+
+- Không bao gồm phát triển tính năng “theo yêu cầu riêng từng khách” (báo giá dự án).
+- Không bao gồm triển khai backend/cloud/server riêng.
+- Không cam kết khôi phục dữ liệu nếu người dùng mất cả backup và quên master password (do E2E encryption).
+- Không bao gồm can thiệp vào thiết bị/hạ tầng của khách ngoài phạm vi hướng dẫn.
 
 Add-on hợp lý:
 
