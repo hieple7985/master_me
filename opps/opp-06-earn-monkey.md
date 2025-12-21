@@ -7,6 +7,8 @@
 - **Telegram channel (client/product):** https://t.me/MonkeyPlayOfficial
 - **Phaser news/examples (game engine):** https://phaser.io/news/category/game
 - **Rive (animation tool):** https://rive.app/
+- **Telegram Mini Apps docs (WebApps):** https://core.telegram.org/bots/webapps
+- **Haptics Android issue (impact/selection may not work):** https://github.com/Telegram-Mini-Apps/issues/issues/28
 - **Game juice spec (WHAT/WHY):**
   - Document: *Flip 2 Earn Monkeys - Game Juice Requirements v2.0 (WHAT/WHY)*
   - Editor video: `Monkeys_edited_compressed.mp4`
@@ -21,13 +23,28 @@
   - Khách **own WHAT/WHY** (feature nào, vì sao quan trọng, trải nghiệm mong muốn).
   - Bên mình **own HOW** (giải pháp kỹ thuật, implement trên stack TMA).
 
-Các cảm xúc cần đạt:
+Các cảm xúc cần đạt
+--------------------
 
 - Anticipation trước mỗi lần lật coin.
 - Satisfaction khi coin match.
 - Excitement build up theo streak.
 - Euphoria khi total win / cashout.
 - Loss phải cảm thấy fair, không bị punish.
+
+## 2.1. Frame cơ hội (opportunity)
+
+- **Ai trả tiền / stakeholder chính:** Chủ sản phẩm game (client).
+- **Giá trị deliver:** Tăng “perceived quality” và cảm giác reward để cải thiện:
+  - Retention ngắn hạn (D1/D3/D7) và thời lượng session.
+  - Tỉ lệ tiếp tục flip / cashout / quay lại.
+  - Cảm giác “fair” khi thua để giảm churn do frustration.
+- **Điều không làm:** Không đụng core rule/toán thắng thua.
+- **Giả định cần xác minh sớm:**
+  - Game hiện có đủ traffic để A/B hoặc trước/sau có ý nghĩa.
+  - Funnel mở Mini App (menu button / profile “Launch app” / direct link) hiện đang hoạt động tốt.
+  - Client có quyền chỉnh asset/audio và chấp nhận trade-off size/perf.
+- **Rủi ro kỹ thuật lớn nhất:** Haptics trên Android có thể không consistent (có báo cáo `impactOccurred`/`selectionChanged` không hoạt động, trong khi `notificationOccurred` hoạt động). Vì vậy cần fallback theo device và không phụ thuộc haptics để tạo “juice”.
 
 ## 3. Scope chính bên mình (juice, không đụng core rules)
 
@@ -168,6 +185,12 @@ Các cảm xúc cần đạt:
 - Không dùng lib nặng.
 - Ưu tiên API native của Telegram (haptics, WebApp integration).
 
+## 6.1. Distribution/launch notes (Telegram Mini Apps)
+
+- Telegram hỗ trợ nhiều entry point (profile Launch app, menu button, inline button, direct link).
+- Với “Main Mini App”, có thể upload media preview và có nút Launch app nổi bật trên profile bot.
+- Link `startapp` và `mode=compact` ảnh hưởng cách mở (full/half height) và có thể tác động session UX.
+
 ## 7. Ước lượng effort & timeline
 
 Giả định:
@@ -256,6 +279,14 @@ Thêm overhead (PM, QA, vòng feedback, thuế) + margin tối thiểu **30–50
 - **Haptic Feedback:**
   - Chạy được trong Telegram app.
   - Intensity match visual/audio, respect system setting.
+  - Nếu một số API haptics không hoạt động theo device/version, hệ thống vẫn phải cho feedback tương đương bằng audio/visual.
+
+## 9.1. Test matrix tối thiểu (để chốt chất lượng)
+
+- **Telegram client:** iOS + Android.
+- **Haptics:** xác minh riêng `notificationOccurred`, `impactOccurred`, `selectionChanged`.
+- **Perf:** đo FPS (stress streak cao), load time, memory, và kiểm tra drop frame khi spam tap.
+- **Screen size:** nhỏ (SE/compact Android), trung bình, lớn.
 
 ## 10. Next steps nội bộ
 
