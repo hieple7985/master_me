@@ -9,6 +9,9 @@
 - **Rive (animation tool):** https://rive.app/
 - **Telegram Mini Apps docs (WebApps):** https://core.telegram.org/bots/webapps
 - **Haptics Android issue (impact/selection may not work):** https://github.com/Telegram-Mini-Apps/issues/issues/28
+- **Telegram Stars payments (digital goods compliance):** https://core.telegram.org/bots/payments-stars
+- **Telegram Mini Apps Analytics SDK:** https://docs.tganalytics.xyz/
+- **Telemetree (3rd-party analytics):** https://telemetree.io/
 - **Game juice spec (WHAT/WHY):**
   - Document: *Flip 2 Earn Monkeys - Game Juice Requirements v2.0 (WHAT/WHY)*
   - Editor video: `Monkeys_edited_compressed.mp4`
@@ -185,11 +188,29 @@ Các cảm xúc cần đạt
 - Không dùng lib nặng.
 - Ưu tiên API native của Telegram (haptics, WebApp integration).
 
+## 6.0.1. Perf gating theo Android performance class
+
+- Telegram khuyến nghị trên Android nên đọc thêm thông tin từ User-Agent (performance class) và giảm animation/visual effects trên thiết bị yếu để đảm bảo mượt.
+- Implication: `EscalationManager` và `FXManager` cần có “cap” theo device tier (particle count, shake amplitude, post-processing) thay vì luôn scale theo streak.
+
 ## 6.1. Distribution/launch notes (Telegram Mini Apps)
 
 - Telegram hỗ trợ nhiều entry point (profile Launch app, menu button, inline button, direct link).
 - Với “Main Mini App”, có thể upload media preview và có nút Launch app nổi bật trên profile bot.
 - Link `startapp` và `mode=compact` ảnh hưởng cách mở (full/half height) và có thể tác động session UX.
+
+## 6.2. Monetization/compliance notes (Telegram Stars)
+
+- Nếu sản phẩm có bán **digital goods/services** bên trong Telegram app thì Telegram yêu cầu dùng **Telegram Stars** (không dùng currency/payment provider khác) để tuân thủ chính sách App Store/Play Store.
+- Nếu định hướng kinh doanh của client là iGaming/earn model, cần xác minh sớm: “đang bán cái gì trong Mini App” để tránh risk bị hạn chế hiển thị trên mobile do policy.
+
+## 6.3. Analytics/measurement notes
+
+- Để chứng minh “juice/polish” có tác động, cần tracking tối thiểu:
+  - D1/D3/D7 retention, session length.
+  - Funnel: open app → first flip → streak N → cashout.
+  - Error/perf signals: drop FPS / long task / crash indicator (nếu có).
+- Option: Telegram Mini Apps Analytics SDK (hướng tới ranking/catalog performance) và/hoặc 3rd-party analytics như Telemetree.
 
 ## 7. Ước lượng effort & timeline
 
