@@ -18,3 +18,4 @@
 - Refine `ideas/games/game-02-spell-craft.md` with MOBA-like hybrid controls, 1-click guided crafting UI, Steam/PC landscape expanded HUD option, Steam Cloud save note, and Steam Early Access checklist.
 - Refine `ideas/games/game-02-spell-craft.md` map direction to a Clash Royale-like grid arena with mostly free movement (soft lanes + anchor zones).
 - Expand `ideas/games/game-02-spell-craft.md` with multi-entry horde spawn rhythm, terrain features (rocks/trees/bridges/trenches), and lightweight resource harvesting that feeds spell crafting.
+- Refine `ideas/games/game-02-spell-craft.md` resources to be A-dominant (spell augmentation) with a small B-lite layer (limited tactical actions in-run).

@@ -138,10 +138,28 @@ Cách khai thác để không rối:
 - Hero có thể **đứng gần node** để tự nhặt (passive) hoặc có 1 skill “Harvest” cooldown dài.
 - Shard không thay thế token nguyên tố; shard chỉ mở **biến thể** cho recipe (tier-2/3) hoặc giảm trade-off.
 
+Chốt hướng: **A-dominant + B-lite**
+
+- **A (chính)**: shard dùng để augment/biến thể spell (modifier, giảm trade-off, đổi shape nhỏ).
+- **B (nhẹ)**: shard cũng tạo ra một “nhịp economy” rất nhỏ trong màn, chỉ để làm vài hành động chiến thuật hiếm.
+
 Ví dụ:
 
 - `Frost Nova` + `Water Silt` -> tạo “slippery field” kéo dài hơn nhưng giảm damage.
 - `Vine Trap` + `Wood Resin` -> root mạnh hơn nhưng cooldown dài.
+
+### B-lite: Tactical resource trong màn (không biến thành economy-heavy)
+
+Quy tắc:
+
+- Không có “spam unit” như game deck battler.
+- Người chơi chỉ có 2–3 hành động dạng B trong cả màn (tùy perk), chủ yếu để cứu tình huống.
+
+Ví dụ hành động B:
+
+- `Emergency Ward` (tốn shard bất kỳ): đặt 1 công trình tạm trong 8–12s để chặn/taunt.
+- `Reroll Quick-Craft` (tốn shard): đổi 3 gợi ý quick-craft.
+- `Overcharge Bench` (tốn shard): craft tier-3 bỏ qua hold-confirm 1 lần hoặc giảm overheat 1 lần.
 
 Counterplay:
 
