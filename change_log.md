@@ -39,4 +39,5 @@
 - Add Option A pricing policy (14-day trial, no prepayment) plus a one-page cooperation offer and week-1 paid onboarding checklist to `ideas/apps/app-04-salon.md`.
 - Add KPI/metrics definitions and weekly report templates (full version + short 3-line Zalo version) to `ideas/apps/app-04-salon.md`.
 - Add messaging templates (24h/2h reminders, follow-up, rebook, win-back) and basic anti-spam rules to `ideas/apps/app-04-salon.md`.
+- Add a solo week 0-2 execution playbook and a barber-to-nail expansion checklist to `ideas/apps/app-04-salon.md`.
 

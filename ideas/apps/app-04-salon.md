@@ -254,13 +254,72 @@ Mục tiêu: trong 14 ngày có 5 tiệm dùng pilot và chốt tối thiểu 2 
 - 5 cuộc gọi
 - 1-2 lịch hẹn demo
 
-### Script gọi nhanh (60 giây)
+### Playbook tuần 0-2 (solo)
+
+Mục tiêu: không “kẹt” vì vừa sales vừa triển khai, nên mỗi ngày chia 2 khung: sáng sales, chiều triển khai.
+
+Tuần 0 (chuẩn bị 1-2 ngày):
+
+- Chuẩn hoá 1 demo flow (10 phút): mở lịch theo thợ, tạo lịch, nhắc lịch, xem danh sách khách
+- Chuẩn hoá 3 template tin nhắn: 24h, 2h, rebook 30 ngày
+- Chuẩn hoá 1 file tracking lead (các cột như phần Tracking sheet)
+
+Tuần 1 (đổ lead + chốt demo + vào pilot):
+
+- Mỗi ngày:
+  - Sáng: 15 lead mới + 10 tin nhắn + 5 cuộc gọi
+  - Chiều: 1 demo + 1 setup pilot (nếu có)
+- Quy tắc:
+  - demo xong là chốt luôn ngày setup (trong 24-48h)
+  - pilot chỉ nhận tối đa 2 tiệm chạy song song (solo)
+
+Tuần 2 (giữ pilot chạy + chốt trả phí):
+
+- Mỗi ngày:
+  - Sáng: tiếp tục lead để không hụt funnel
+  - Chiều: support pilot + chỉnh template + nhắc chủ tiệm đưa toàn bộ lịch mới vào hệ thống
+- Ngày 7-10: gửi report tuần 1 (bản B) + nhắn Zalo 3 dòng (bản A)
+- Ngày 14: chốt vào gói trả phí
+
+## Mở rộng cuốn chiếu: từ barber sang nail
+
+Nguyên tắc: chỉ mở nail sau khi barber có 5-10 tiệm chạy ổn (onboarding < 90 phút, no-show giảm thấy rõ).
+
+### ICP nail (khác barber ở đâu)
+
+- Tiệm nail 2-10 thợ
+- Booking theo bàn/ghế nhiều hơn theo thợ (nhưng vẫn cần xem theo thợ)
+- Dịch vụ hay theo combo (sơn gel + design + chăm móng)
+
+### Những thứ cần chỉnh khi sang nail
+
+- Catalog dịch vụ:
+  - thời lượng theo loại dịch vụ + add-on
+  - gợi ý combo để upsell
+- Resource:
+  - map thêm “bàn/ghế” nếu cần, hoặc giữ theo thợ nhưng có buffer
+- Tin nhắn:
+  - thay câu chữ từ “cắt tóc” sang “làm nail”
+  - follow-up xin review kèm ảnh trước/sau nếu tiệm cho phép
+- KPI:
+  - tỉ lệ quay lại theo chu kỳ 3-4 tuần (nail)
+
+### Offer cho nail (để chốt nhanh)
+
+- “Quản lịch theo thợ + nhắc lịch tự động + rebook chu kỳ 3-4 tuần”
+
+### Script gọi nhanh (barber) (60 giây)
 
 - “Em đang làm `Studio Flow` giúp tiệm giảm trùng lịch/no-show và nhắc lịch tự động. Anh/chị cho em hỏi tiệm mình đang nhận đặt lịch qua Zalo hay khách tự đến là chính?”
 - Nếu họ có nhận đặt lịch:
   - “Em xin 10 phút demo. Nếu không giúp tiệm đỡ rối lịch thì thôi.”
 - Chốt lịch:
   - “Em qua tiệm hoặc call video 10 phút, anh/chị rảnh khung nào hôm nay/mai?”
+
+### Script gọi nhanh (nail) (60 giây)
+
+- “Em đang làm `Studio Flow` giúp tiệm nail quản lịch theo thợ và nhắc lịch tự động để giảm khách huỷ/no-show. Tiệm mình đang nhận đặt lịch qua Zalo/Facebook nhiều không ạ?”
+- “Em xin 10 phút demo, nếu thấy không hợp workflow tiệm thì mình thôi.”
 
 ### Script nhắn follow-up sau khi họ seen
 
