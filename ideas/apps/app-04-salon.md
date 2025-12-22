@@ -292,6 +292,53 @@ Mục tiêu: trong 14 ngày có 5 tiệm dùng pilot và chốt tối thiểu 2 
 
 - “14 ngày rồi anh/chị thấy lịch có đỡ trùng/nhỡ không? Nếu ok mình vào gói `499k/tháng`, em giữ setup + template nhắc lịch cho tiệm.”
 
+## Pricing policy (chốt theo Option A)
+
+- Dùng thử: 14 ngày
+- Không yêu cầu thẻ/không thu tiền trước trong giai đoạn trial
+- Không refund vì chỉ bắt đầu tính phí khi vào gói
+- Khi vào gói: thu theo tháng (khuyến nghị đóng 3 tháng để giữ giá)
+
+## Đề nghị hợp tác (1 trang)
+
+### Vấn đề
+
+- Đặt lịch qua chat dễ trùng/nhỡ
+- No-show làm mất doanh thu
+- Chủ tiệm không có nhắc lịch/follow-up nên khách không quay lại đều
+
+### Giải pháp
+
+`Studio Flow` giúp:
+
+- Quản lịch theo thợ
+- Nhắc lịch tự động (24h + 2h)
+- Follow-up sau cắt để kéo khách quay lại
+
+### Cam kết triển khai
+
+- Setup done-for-you 60-90 phút
+- Hỗ trợ trong 14 ngày trial để tiệm chạy ổn
+
+### Giá
+
+- `499k/tháng` (tối đa 8 thợ)
+- Tin nhắn tính theo usage (pass-through)
+
+### Điều kiện bắt đầu
+
+- Tiệm có 1 người phụ trách chốt lịch
+- Cho phép import danh sách khách cơ bản (tên + số)
+- Đồng ý dùng `Studio Flow` cho toàn bộ lịch mới trong 14 ngày
+
+## Checklist tuần 1 cho tiệm trả phí
+
+- Chốt gói và ngày tính phí
+- Chuẩn hoá dịch vụ + thời lượng
+- Chuẩn hoá quy tắc đặt lịch (slot buffer, trễ bao nhiêu phút thì xử lý)
+- Template nhắc lịch + follow-up (1 bản chuẩn)
+- Thiết lập KPI tối thiểu: no-show, số khách quay lại, doanh thu theo thợ
+
 ## Cách validate nhanh (không code nhiều)
 
 - Phỏng vấn 15-25 chủ tiệm, hỏi:

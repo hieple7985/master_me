@@ -36,4 +36,5 @@
 - Add a barber-first sales pitch section (ICP, offer, pricing, outreach script, objections, onboarding) to `ideas/apps/app-04-salon.md` for `Studio Flow`.
 - Add Option B shared core services checklist (B1 default, B2 optional) for `Studio Flow` + `Beauty Flow` to `ideas/apps/app-04-salon.md`.
 - Add a practical 14-day plan (funnel, channels, scripts, tracking, pilot checklist) to acquire the first 5 barber shops for `Studio Flow` in `ideas/apps/app-04-salon.md`.
+- Add Option A pricing policy (14-day trial, no prepayment) plus a one-page cooperation offer and week-1 paid onboarding checklist to `ideas/apps/app-04-salon.md`.
 
