@@ -205,25 +205,126 @@
    - Partner agency dev/marketing; cộng đồng CTO; “compliance in a week”
  
  ### 11) Zalo OA CRM + Ticketing cho SME (CSKH, bán lại, chăm sóc sau bán)
- - **ICP**
-   - SME bán lẻ/điện máy/giáo dục/du lịch; inbound qua Zalo; đội sales/CSKH 3–50 người
- - **Pain**
-   - Chat phân mảnh; không đo được SLA; mất lịch sử; không có pipeline rõ ràng
- - **Wedge (MVP)**
-   - Shared inbox Zalo + phân công + tag + SLA + báo cáo + mini-CRM
- - **Pricing**
-   - Theo agent/tháng; add-on automation, broadcast, call center integration
- - **Moat**
-   - Dữ liệu hội thoại + playbook theo ngành + template automation
- - **Rủi ro**
-   - Phụ thuộc nền tảng Zalo/Meta; cạnh tranh mạnh (CRM + inbox tools)
- - **GTM**
-   - Bán qua agency marketing/CRM implementer; “setup 2 giờ, đo SLA ngay”
+- **ICP**
+  - SME bán lẻ/điện máy/giáo dục/du lịch; inbound qua Zalo; đội sales/CSKH 3–50 người
+- **Pain**
+  - Chat phân mảnh; không đo được SLA; mất lịch sử; không có pipeline rõ ràng
+- **Wedge (MVP)**
+  - Shared inbox Zalo + phân công + tag + SLA + báo cáo + mini-CRM
+- **Pricing**
+  - Theo agent/tháng; add-on automation, broadcast, call center integration
+- **Moat**
+  - Dữ liệu hội thoại + playbook theo ngành + template automation
+- **Rủi ro**
+  - Phụ thuộc nền tảng Zalo/Meta; cạnh tranh mạnh (CRM + inbox tools)
+- **GTM**
+  - Bán qua agency marketing/CRM implementer; “setup 2 giờ, đo SLA ngay”
+
+ - **Positioning (định vị)**
+   - “Zendesk/Intercom-lite cho Zalo OA” dành cho SME: inbox chung + ticket + CRM nhẹ + báo cáo SLA
+   - Mục tiêu: biến Zalo từ kênh chat cá nhân → kênh vận hành có quy trình (SLA, phân loại, đo lường)
+
+ - **Buyer / Champion (ai mua, ai dùng)**
+   - Chủ doanh nghiệp/COO/Head of CSKH/Sales Manager
+   - Champion thường là team lead CSKH (đau vì không kiểm được nhân sự & chất lượng xử lý)
+
+ - **Use-cases ưu tiên (wedge rõ nhất)**
+   - CSKH sau bán: bảo hành/đổi trả/sửa chữa/đặt lịch
+   - Tư vấn trước bán: hỏi giá/kiểm tồn/đặt cọc
+   - Booking: lịch học/lịch tour/lịch khám (nếu vertical)
+   - Khiếu nại/đòi bồi hoàn cần theo SLA
+
+ - **Core modules (phạm vi sản phẩm)**
+   - Inbox & routing
+     - Shared inbox theo OA
+     - Phân công (manual/round-robin) + chuyển ca
+     - Tag, priority, status, assignment reason
+   - Ticketing
+     - Ticket từ hội thoại + form (web) + import danh sách
+     - SLA (first response, next response, resolution) theo tag/nhóm/giờ làm việc
+     - Internal note, @mention, file, checklist xử lý
+   - Mini-CRM
+     - Contact profile (tên/điện thoại/Zalo ID), timeline, thuộc tính tuỳ biến
+     - Pipeline đơn giản (lead → won/lost) hoặc “customer lifecycle” (new/active/churn risk)
+   - Automation
+     - Auto-tag/auto-assign theo keyword, menu, nguồn campaign, giờ làm việc
+     - SLA breach alert
+     - Macro/canned reply + template theo ngành
+   - Reporting
+     - SLA attainment, backlog, agent performance, tag volume, peak hours
+     - Export CSV + dashboard tuần/tháng
+
+ - **Workflow mẫu (as-is → to-be)**
+   - As-is
+     - Nhân viên trả lời bằng Zalo cá nhân/1 máy chung → khó bàn giao, mất lịch sử, không đo SLA
+   - To-be
+     - Inbound Zalo OA → auto-tag + auto-assign → agent xử lý → tạo ticket nếu cần follow-up
+     - Escalate → close → survey/CSAT → remarketing/bán lại
+
+ - **Tích hợp (điểm khác biệt để bán được)**
+   - Zalo OA API (bắt buộc): nhận/gửi tin nhắn, menu, template (tuỳ loại quyền)
+   - ZNS (tuỳ giai đoạn): thông báo trạng thái ticket/đặt lịch/nhắc thanh toán
+   - Webhook/CRM/Google Sheet: đồng bộ lead/customer cơ bản
+   - Call center (add-on): click-to-call + log cuộc gọi (ưu tiên nhà cung cấp phổ biến ở VN)
+   - POS/ERP (tuỳ vertical): tra đơn hàng/bảo hành/tồn kho (chỉ làm sau khi wedge chạy)
+
+ - **Data model tối thiểu (để build nhanh nhưng mở rộng được)**
+   - Tenant (công ty)
+   - Channel (Zalo OA)
+   - User/Agent + Team + Role
+   - Contact + Attributes
+   - Conversation + Message
+   - Ticket + SLA policy + Status history
+   - Tag + Automation rule + Macro
+   - Event log (audit) + Report snapshot
+
+ - **MVP 4–6 tuần (scope chặt để demo bán được)**
+   - Shared inbox + phân công + tag + search
+   - Ticket (create/assign/close) + SLA 1 cấp + cảnh báo quá hạn
+   - Contact profile + timeline
+   - 6 báo cáo lõi: volume theo tag, backlog, SLA attainment, first response time, resolution time, agent leaderboard
+   - Import/export CSV + phân quyền cơ bản
+
+ - **Pricing gợi ý (để chốt nhanh)**
+   - Starter: 3–5 agents (gói cố định)
+   - Pro: theo agent + SLA nâng cao + automation
+   - Add-ons: ZNS, call center, multi-OA, integration pack, onboarding/triển khai
+
+ - **North-star metrics & KPI (đo hiệu quả cho khách)**
+   - % ticket đúng SLA
+   - First response time (P50/P90)
+   - Backlog theo ngày
+   - Reopen rate
+   - CSAT (nếu triển khai survey)
+
+ - **Moat (làm sâu để giữ khách & tăng ARPA)**
+   - Template workflow theo ngành (điện máy/bảo hành, giáo dục/booking, du lịch/đổi lịch)
+   - Bộ automation/macro “bán kèm” theo campaign/seasonality
+   - Benchmark chỉ số CSKH theo ngành (ẩn danh) để upsell Pro
+
+ - **Rủi ro & cách giảm**
+   - Phụ thuộc policy/API của Zalo
+     - Giảm: thiết kế adapter đa kênh (Zalo trước, nhưng kiến trúc không khoá)
+   - Cạnh tranh từ CRM/inbox tools
+     - Giảm: wedge theo SLA + ticketing + template theo ngành + triển khai cực nhanh
+   - Nhu cầu “đòi tích hợp nhiều” sớm
+     - Giảm: gói integration theo bậc, roadmap rõ, pricing minh bạch
+
+ - **Đối thủ/so sánh (để định vị khi bán)**
+   - CRM phổ biến (kèm inbox): mạnh CRM nhưng thường yếu SLA/ticket hoặc triển khai lâu
+   - Omnichannel inbox: mạnh đa kênh nhưng không “đúng chất Zalo-first” và thiếu template VN
+   - Kết luận: thắng bằng “Zalo-first + SLA measurable + setup nhanh + template ngành”
+
+ - **GTM experiment 14 ngày (để validate nhanh)**
+   - 10 cuộc phỏng vấn (3 ngành) + chụp quy trình hiện tại
+   - 3 pilot trả phí nhẹ (2–5 triệu/tháng) với cam kết KPI: giảm first response 30–50%
+   - Kênh: agency chạy Zalo Ads + đơn vị triển khai CRM + cộng đồng chủ shop/SME
  
  ### 12) Sales Enablement B2B (proposal/quote, CPQ nhẹ, catalog, approval)
  - **ICP**
    - Công ty B2B dịch vụ/thiết bị; báo giá phức tạp; nhiều phiên bản proposal
  - **Pain**
+  - Mất thời gian làm báo giá; sai giá/chiết khấu; thiếu kiểm soát duyệt
    - Mất thời gian làm báo giá; sai giá/chiết khấu; thiếu kiểm soát duyệt
  - **Wedge (MVP)**
    - Template proposal + quote builder + approval + tracking mở/xem

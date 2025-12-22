@@ -28,3 +28,6 @@
 - Expand `ideas/games/game-04-bike-race.md` with a scope-cut MVP plan (4-6 months), break-even sensitivity model, and a premium mobile release checklist.
 - Expand `ideas/apps/app-02-new-social.md` with opportunity analysis (3-5 years vs 10 years), solo-dev feasibility, VN vs international go-to-market guidance, 2026 niche recommendations, and a VN-first Hai Phong baseline + 12-month revenue forecast scenarios.
 - Add `ideas/IDEAS_APP.md` Top 20 VN SaaS opportunities with quick market sizing heuristics, rollout sequence, and 1-6 month MRR projections.
+- Expand App #11 into a structured deep-dive spec in `ideas/apps/app-11-zalo-crm.md`.
+- Refine App #11 summary with deeper modules/workflow/integration notes in `ideas/IDEAS_APP.md`.
+- Add new app stubs `ideas/apps/app-03-i-need.md` and `ideas/apps/app-04-salon.md`.
