@@ -91,6 +91,78 @@
  - Nếu bạn đã có tool (notes, tracker, editor, template): thêm “share/collect/curate/fork” + follow
  - Monetize: subscription
  
+ ## Baseline đề xuất (VN-first, Hải Phòng, 2026)
+ Hướng chọn: Pro Kitchen Network (học nghề/đi làm bếp) với 3 mảnh kiếm tiền: cohort, employer (đăng tuyển/giới thiệu), và pro candidate.
+ 
+ ### Giả định tiêu chuẩn
+ - Tệp học viên chảy qua: 100K (không coi là active; chỉ dùng làm nguồn remarket)
+ - Kênh kéo lại: Zalo/Facebook/đầu mối lớp học (remarket nhiều đợt)
+ - Phạm vi địa lý giai đoạn 1: Hải Phòng (sau đó mở HN)
+ - Đơn vị tương tác chính: skill proofs + mentor verify + portfolio
+ - Mục tiêu chất lượng: ưu tiên số ca nhận việc/placement hơn là số lượt đăng ký
+ 
+ ### Funnel/volume baseline (Base)
+ - Remarketing reach/tháng: 10,000 người
+ - Click/lead rate: 5% (500 leads/tháng)
+ - Join cohort/challenge: 20% lead (100 participants/tháng)
+ - Hoàn thành ít nhất 1 skill proof: 50% participants (50 proofs/tháng)
+ - Mentor verify: 20% proofs (10 verified/tháng)
+ - Placement (được nhận việc/đi ca/thực tập): 10% participants (10 placements/tháng)
+ 
+ ### Pricing baseline (Base)
+ - Cohort fee: 499,000 VND / học viên / cohort (30-45 ngày)
+ - Employer post: 1,500,000 VND / tin / 30 ngày
+ - Employer success fee: 1,000,000 VND / placement
+ - Pro candidate: 49,000 VND / tháng
+ 
+ ## Dự trù doanh thu 12 tháng (ước lượng theo giả định)
+ Các con số bên dưới là doanh thu gộp (gross revenue), chưa trừ chi phí vận hành/marketing.
+ 
+ ### Kịch bản C (Conservative)
+ - Participants/tháng: 40
+ - Cohort fee take-rate: 30%
+ - Job posts/tháng: 3
+ - Placements/tháng: 2
+ - Pro candidates trả tiền: 50
+ 
+ Doanh thu/tháng (ước tính):
+ - Cohort: 40 * 30% * 499,000 = 5,988,000
+ - Employer post: 3 * 1,500,000 = 4,500,000
+ - Success fee: 2 * 1,000,000 = 2,000,000
+ - Pro: 50 * 49,000 = 2,450,000
+ - Tổng/tháng: 14,938,000 VND
+ - Tổng/12 tháng: 179,256,000 VND
+ 
+ ### Kịch bản B (Base)
+ - Participants/tháng: 100
+ - Cohort fee take-rate: 40%
+ - Job posts/tháng: 8
+ - Placements/tháng: 10
+ - Pro candidates trả tiền: 200
+ 
+ Doanh thu/tháng (ước tính):
+ - Cohort: 100 * 40% * 499,000 = 19,960,000
+ - Employer post: 8 * 1,500,000 = 12,000,000
+ - Success fee: 10 * 1,000,000 = 10,000,000
+ - Pro: 200 * 49,000 = 9,800,000
+ - Tổng/tháng: 51,760,000 VND
+ - Tổng/12 tháng: 621,120,000 VND
+ 
+ ### Kịch bản A (Aggressive)
+ - Participants/tháng: 250
+ - Cohort fee take-rate: 50%
+ - Job posts/tháng: 20
+ - Placements/tháng: 30
+ - Pro candidates trả tiền: 600
+ 
+ Doanh thu/tháng (ước tính):
+ - Cohort: 250 * 50% * 499,000 = 62,375,000
+ - Employer post: 20 * 1,500,000 = 30,000,000
+ - Success fee: 30 * 1,000,000 = 30,000,000
+ - Pro: 600 * 49,000 = 29,400,000
+ - Tổng/tháng: 151,775,000 VND
+ - Tổng/12 tháng: 1,821,300,000 VND
+ 
  ## Tiêu chí chọn 1 ngách để chốt (checklist)
  - Bạn có thể tìm được 100 người đầu trong 2-4 tuần không?
  - Trong 7 ngày đầu, user có lý do quay lại 2-3 lần không?

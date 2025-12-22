@@ -26,4 +26,4 @@
  - Expand `ideas/games/game-05-solomon-72-demonds.md` into a structured one-pager (decisions, scope, vibe pillars), and add highest win-rate PC-first release strategy plus global revenue forecast assumptions.
  - Expand `ideas/games/game-04-bike-race.md` into a structured one-pager for an isometric lap-based cyberpunk cat courier combat racer (cyber rides, light combat, premium low price), including roster, track list, solo timeline estimate, and global sales assumptions.
  - Expand `ideas/games/game-04-bike-race.md` with a scope-cut MVP plan (4-6 months), break-even sensitivity model, and a premium mobile release checklist.
- - Expand `ideas/apps/app-02-new-social.md` with opportunity analysis (3-5 years vs 10 years), solo-dev feasibility, VN vs international go-to-market guidance, and 2026 niche recommendations.
+ - Expand `ideas/apps/app-02-new-social.md` with opportunity analysis (3-5 years vs 10 years), solo-dev feasibility, VN vs international go-to-market guidance, 2026 niche recommendations, and a VN-first Hai Phong baseline + 12-month revenue forecast scenarios.
