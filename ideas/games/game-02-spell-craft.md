@@ -70,6 +70,23 @@ Nguyên tắc targeting:
   - thả portrait hero vào 1 zone/ô -> hero chạy tới đó và giữ vị trí chiến đấu
   - reposition vẫn realtime nhưng có wind-up/cooldown để không thành spam
 
+### Wave & spawn (chốt lựa chọn B: multi-entry horde)
+
+- Quái spawn từ **nhiều cổng** (top/left/right) và chảy về base theo flow-field.
+- Mỗi màn có “nhịp áp lực” rõ (để người chơi đọc nhanh như MOBA/auto-battler):
+  - Wave thường: 15–25s
+  - Wave elite: 25–35s (có 1–2 quái tạo biến số)
+  - Boss wave: 45–70s (telegraph rõ + counter-recipe window)
+- “Soft lanes” vẫn tồn tại như **luồng giao thông** (choke points tự nhiên), nhưng không khóa cứng.
+
+Role quái (để sản xuất nhanh nhưng đa dạng):
+
+- `Runner`: nhanh, ít máu, ép phản xạ.
+- `Tank`: chậm, nhiều giáp, ép dùng Kim/Thổ.
+- `Shielder`: tạo shield AOE, ép chọn target policy.
+- `Disruptor`: push/pull hoặc silence spell 1–2s.
+- `Miner`: chạy tới terrain node để hút tài nguyên (tạo objective phụ).
+
 ## PC/Steam (chốt lựa chọn B: PC-native)
 
 - Vẫn giữ core gameplay theo trục dọc (đọc lane rõ), nhưng cho thêm **landscape expanded HUD**:
@@ -93,6 +110,42 @@ Nguyên tắc targeting:
 
 - Mỗi loại quái có “bản chất” nên drop nghiêng về 1–2 nguyên tố.
 - Elite/boss rơi “Core” (nguyên tố đậm đặc) dùng để craft tier cao.
+
+## Địa hình, vật liệu tự nhiên & khai thác (lightweight)
+
+Battlefield có vật liệu như **đá/cây/rãnh/cầu/địa hình** để tăng tactical depth, nhưng không biến thành game mining.
+
+### Terrain features (tác dụng chiến thuật)
+
+- **Đá / vách**: chặn line-of-sight, tạo choke point; beam/chain có thể bị cắt.
+- **Cây / bụi**: che tầm nhìn nhẹ hoặc tạo “zone” tăng/giảm accuracy (tuỳ theme).
+- **Rãnh / hào**: làm chậm hoặc bắt buộc đi vòng; một số quái bay bỏ qua.
+- **Cầu**: choke point rõ; dễ đặt trap/wall.
+- **Địa hình cao/thấp**: bonus nhỏ cho tầm bắn hoặc chống push/pull.
+
+### Resource harvesting (gắn với spell craft)
+
+Thay vì “đào vàng”, mỗi terrain node tạo ra **Material Shards** dùng như “gia vị” craft:
+
+- `Stone Shard` (đá): thêm modifier kiểu `Fortify` / `Wall` / `Armor Break`.
+- `Wood Resin` (cây): thêm modifier kiểu `Growth` / `Vine` / `Poison duration`.
+- `Water Silt` (rãnh): thêm modifier kiểu `Slow field` / `Cleanse`.
+- `Bridge Iron` (cầu): thêm modifier kiểu `Pierce` / `Conduct`.
+
+Cách khai thác để không rối:
+
+- Node có trạng thái “đang hoạt động” theo thời gian (spawn shard 1 lần mỗi X giây).
+- Hero có thể **đứng gần node** để tự nhặt (passive) hoặc có 1 skill “Harvest” cooldown dài.
+- Shard không thay thế token nguyên tố; shard chỉ mở **biến thể** cho recipe (tier-2/3) hoặc giảm trade-off.
+
+Ví dụ:
+
+- `Frost Nova` + `Water Silt` -> tạo “slippery field” kéo dài hơn nhưng giảm damage.
+- `Vine Trap` + `Wood Resin` -> root mạnh hơn nhưng cooldown dài.
+
+Counterplay:
+
+- Một số quái `Miner` sẽ hút shard từ node (objective phụ), ép người chơi giữ map control.
 
 ## Spell Crafting System (điểm ăn tiền)
 
@@ -229,6 +282,14 @@ Twist cuối chương: kẻ địch không chỉ là quái, mà là “bản sao
 - Mọi đòn nguy hiểm của elite/boss đều có telegraph rõ.
 - Spell/skill có preview giống MOBA (line, cone, circle).
 - Có “danger ping” tự động trên lane sắp vỡ.
+
+### 7) “Map control” kiểu Warcraft Rumble (nhưng offline)
+
+Mượn tinh thần của các game kiểu `Warcraft Rumble`: map không chỉ là đường đi, mà là **điểm tranh chấp**.
+
+- **Choke point + terrain node** tạo quyết định: giữ vùng nào để dễ craft/tối ưu spell.
+- **Objective phụ** (miner quái, elite chiếm node) tạo nhịp trận và lý do reposition.
+- Unit role rõ: mỗi hero/quái có “điểm làm việc” riêng (không dẫm chân).
 
 ## Trên thị trường có game nào giống chưa?
 
