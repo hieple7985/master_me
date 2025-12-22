@@ -228,6 +228,70 @@ Share thêm:
 - Bước 3: share Messaging
 - Bước 4: cân nhắc Booking core (chỉ khi cần, chuyển theo từng nhóm tiệm)
 
+## Kế hoạch kiếm 5 tiệm barber đầu tiên (thực chiến)
+
+Mục tiêu: trong 14 ngày có 5 tiệm dùng pilot và chốt tối thiểu 2 tiệm trả tiền.
+
+### Funnel mục tiêu
+
+- Lead list: 60-100 tiệm
+- Contacted: 40-70
+- Book demo: 10-15
+- Pilot: 5
+- Paid: 2+
+
+### Kênh lấy lead (VN)
+
+- Google Maps: tìm “barber”, “barbershop” theo quận
+- Facebook: page tiệm + group barber địa phương
+- TikTok: tiệm có clip đều, comment xin contact
+- Hỏi nhà cung cấp sáp vuốt tóc/ghế cắt/đào tạo barber (deal referral)
+
+### Chỉ tiêu hoạt động mỗi ngày (7 ngày đầu)
+
+- 15-20 tiệm được add vào lead list
+- 10-15 tin nhắn Zalo/Facebook
+- 5 cuộc gọi
+- 1-2 lịch hẹn demo
+
+### Script gọi nhanh (60 giây)
+
+- “Em đang làm `Studio Flow` giúp tiệm giảm trùng lịch/no-show và nhắc lịch tự động. Anh/chị cho em hỏi tiệm mình đang nhận đặt lịch qua Zalo hay khách tự đến là chính?”
+- Nếu họ có nhận đặt lịch:
+  - “Em xin 10 phút demo. Nếu không giúp tiệm đỡ rối lịch thì thôi.”
+- Chốt lịch:
+  - “Em qua tiệm hoặc call video 10 phút, anh/chị rảnh khung nào hôm nay/mai?”
+
+### Script nhắn follow-up sau khi họ seen
+
+- “Em gửi 1 ảnh demo lịch theo thợ + mẫu nhắc lịch. Nếu anh/chị ok, em qua set 60 phút, dùng thử 14 ngày.”
+
+### Tracking sheet (cột tối thiểu)
+
+- Tên tiệm
+- Địa chỉ/quận
+- Quy mô (số thợ)
+- Kênh contact (Zalo/FB/phone)
+- Tình trạng (new/contacted/seen/replied/demo/pilot/paid/lost)
+- Pain chính (trùng lịch/no-show/hoa hồng)
+- Ngày demo
+- Ngày bắt đầu pilot
+- Kết quả tuần 1 (đỡ trùng lịch? nhắc lịch chạy?)
+- Note
+
+### Checklist chạy pilot 14 ngày (để không fail)
+
+- Ngày 0: setup dịch vụ + thợ + giờ mở cửa
+- Ngày 1-2: đưa toàn bộ lịch mới vào `Studio Flow`
+- Ngày 3: bật nhắc lịch 24h + 2h
+- Ngày 7: review số no-show, chỉnh template nhắc lịch
+- Ngày 10: gửi report ngắn cho chủ tiệm (3 dòng + 1 đề xuất hành động)
+- Ngày 14: chốt gói trả phí
+
+### Cách chốt trả phí (cực ngắn)
+
+- “14 ngày rồi anh/chị thấy lịch có đỡ trùng/nhỡ không? Nếu ok mình vào gói `499k/tháng`, em giữ setup + template nhắc lịch cho tiệm.”
+
 ## Cách validate nhanh (không code nhiều)
 
 - Phỏng vấn 15-25 chủ tiệm, hỏi:
