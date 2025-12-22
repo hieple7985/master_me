@@ -247,6 +247,49 @@ Mỗi hero có 3 phần: **Vai trò lane**, **cơ chế nguyên tố**, **ultima
 - Sổ tay tri thức: lưu discovered recipes + mastery.
 - Cosmetic: VFX spell theo trường phái.
 
+## Adaptive Difficulty (tự hiệu chỉnh khó/dễ)
+
+Mục tiêu: giữ nhịp “căng nhưng công bằng” cho cả người mới và người giỏi, đặc biệt vì game có yếu tố khám phá recipe.
+
+Nguyên tắc:
+
+- Không nerf thẳng damage của người chơi theo kiểu lộ liễu.
+- Ưu tiên điều chỉnh bằng **spawn composition**, **telegraph window**, và **tài nguyên cứu nguy**.
+- Chỉ điều chỉnh theo “khoảng” (bands), không thay đổi liên tục từng giây.
+
+### Skill signals (đo người chơi giỏi hay chưa)
+
+Tính điểm “Performance Score” theo cửa sổ 30–60s:
+
+- `Base HP lost` trong window.
+- `Overkill margin`: còn dư bao nhiêu so với áp lực (clear speed).
+- `Craft efficiency`: token bị waste (đầy bar, craft chậm), số lần craft sai/nghẽn.
+- `Counter-recipe success`: thành công hay thất bại (boss/elite).
+- `Hero downtime`: hero đứng sai vị trí quá lâu (bị push khỏi choke, không cover).
+
+### Knobs (cần gạt để chỉnh khó)
+
+Chỉnh theo 3 tầng: Easy / Normal / Hard trong cùng một stage, dựa trên Performance Score.
+
+- **Wave composition**:
+  - tăng/giảm tỷ lệ `Runner` vs `Tank` vs `Disruptor`
+  - chèn thêm 1 `Miner` hoặc bỏ `Miner`
+- **Telegraph & counter window**:
+  - tăng/giảm 0.3–0.6s cho đòn boss quan trọng
+  - counter-recipe window có thể dài hơn cho người mới
+- **Terrain shard intensity**:
+  - người chơi yếu: node spawn shard sớm hơn hoặc gần base hơn
+  - người chơi giỏi: node spawn xa hơn (đòi map control)
+- **B-lite lifeline**:
+  - người chơi yếu: thêm 1 lần miễn phí `Emergency Ward`
+  - người chơi giỏi: giảm số lần B-lite trong màn
+
+### Anti-frustration rules
+
+- Không tăng khó ngay sau khi người chơi vừa fail.
+- Khi người chơi fail liên tiếp 2–3 lần cùng stage, bật “Mercy Band” trong 1 run kế.
+- Người chơi giỏi có thể bật “Challenge Lock” để khóa difficulty (không adaptive).
+
 ## Tuyến truyện (đủ dẫn dắt, không nặng cutscene)
 
 Thế giới bị xé rách bởi **Lò Luyện Nguyên Tố** (một cỗ máy cổ đại). Quái vật là “tàn dư” của các mạch nguyên tố bị lỗi, tràn ra các khe nứt.
@@ -262,6 +305,26 @@ Mỗi chương truyện tương ứng một vùng bị nhiễm:
 - Chương 5: Thổ mạch (tank, quake)
 
 Twist cuối chương: kẻ địch không chỉ là quái, mà là “bản sao phép” (spell echoes) – học cách phản-craft.
+
+### Opening hook (đưa người chơi vào game)
+
+- Mở đầu: một thành phố tiền tuyến bị vỡ **mạch nguyên tố**, quái tràn ra từ các khe.
+- Nhân vật chính (người chơi) được tuyển vào hội **Spellwright** để bảo vệ các “Lò Ổn Định” (stabilizer nodes).
+- Tutorial được gắn vào câu chuyện: lần đầu craft thành công là “viết lại” một đoạn mạch nguyên tố.
+
+### Factions
+
+- **Spellwright Guild**: rèn phép, chữa lỗi mạch.
+- **The Echo Court**: các “bản sao phép” tự ý thức, muốn chiếm quyền điều khiển mạch.
+- **Warden Constructs**: máy cổ đại bảo vệ lò, nhưng giờ hoạt động sai lệch.
+
+### Chapter beats (đủ cho live content)
+
+- Mỗi chapter có:
+  - 10–12 stage
+  - 1 mini-boss (giữa chương)
+  - 1 boss (cuối chương)
+  - 1 mechanic mới (terrain, element, hoặc shape)
 
 ## Yếu tố độc nhất để “cuốn” 2026
 
@@ -347,7 +410,36 @@ Kết luận: ý tưởng “tower defense + Magicka-like craft-in-combat + 2–
   - 1 boss có cơ chế counter-recipe
 - Dùng Steam Playtest để test control/craft UI.
 
+## DLC (nếu làm thêm 1 bản)
+
+### Base game vs DLC: nguyên tắc phân rã
+
+- Base game phải có vòng lặp hoàn chỉnh và “đủ no” để review tốt.
+- DLC nên thêm **1 mechanic lớn** + **1 chapter theme** + **pool recipe mới**.
+
+### Phase breakdown (khuyến nghị)
+
+- **Phase 0: Prototype (2–4 tuần)**
+  - 1 map grid, 1 hero active, 2 hero phụ
+  - 10 recipe, 1 boss counter-recipe
+- **Phase 1: Vertical Slice (4–8 tuần)**
+  - 4 hero, 20 recipe, terrain shards A-dominant + B-lite
+  - 1 chapter (10 stage) + 1 boss
+- **Phase 2: Base Launch (8–16 tuần)**
+  - 3 chapter + meta progression + polish UX
+- **Phase 3: DLC 1 (6–10 tuần)**
+  - 1 chapter mới + 1 mechanic mới + 2 hero + 12–18 recipe + 1 boss
+
+### DLC 1 gợi ý (mẫu)
+
+- Theme: **Phong/Lôi** (đẩy mạnh reposition, chain, và map control)
+- New terrain: `Lightning Rod` node (tạo shard đặc biệt để augment chain/beam)
+- New enemies: `Blinker` (teleport), `Grounder` (tắt chain), `Storm Miner`
+- New boss: có 2 counter windows liên tiếp (đòi craft nhanh nhưng vẫn one-click)
+
 ## Câu hỏi cần bạn chốt để mình refine tiếp
 
-- Bạn muốn map theo kiểu **lane cố định** (giống Arknights) hay **đường cong** (maze-lite)?
+- Grid arena chốt rồi; bạn muốn grid size mặc định: **6x10** hay **7x11**?
+- Bạn muốn base đặt ở **bottom-center** hay **bottom-left/right** (để tạo biến thể map)?
+- Bạn muốn hero active move trên mobile là **joystick** hay **tap-to-move** (vẫn giữ hold-aim-release cho spell)?
 - Bạn thích tone truyện: **dark fantasy** hay **sci-fantasy** (cỗ máy nguyên tố)?
