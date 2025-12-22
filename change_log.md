@@ -21,3 +21,4 @@
 - Refine `ideas/games/game-02-spell-craft.md` resources to be A-dominant (spell augmentation) with a small B-lite layer (limited tactical actions in-run).
 - Expand `ideas/games/game-02-spell-craft.md` with adaptive difficulty rules, DLC phasing plan, and a more detailed narrative hook (factions + chapter beats).
 - Refine `ideas/games/game-02-spell-craft.md` controls to use mobile tap-to-move and define grid sizing via a small set of fixed templates (rather than fully dynamic sizing).
+- Expand `ideas/games/game-03-elu-elements.md` into a structured one-pager spec with confirmed direction, crafting recipes, boss template, and monetization assumptions.
