@@ -1,4 +1,4 @@
-# game-03
+# game-03: Element Forge
  
  ## Direction (confirmed)
  - **Genre**: Casual mobile puzzle
@@ -6,9 +6,10 @@
  - **Combat/Boss**: Boss appears as an **objective set-piece** (not full RPG)
  - **Monetization**: Ads + IAP
  - **Release**: Global (English-first)
+ - **Art direction**: Cute/bright
  
  ## One-line hook
- Match-3 to craft elemental orbs with fixed recipes, then use them to beat objectives and boss mechanics.
+ Match-3 to auto-craft elemental orbs with fixed recipes, then use them to beat objectives and boss mechanics.
  
  ## Pillars
  1. **Familiar match-3** (swap + gravity + cascades)
@@ -18,7 +19,7 @@
  ## Core loop
  - Enter level with 1-2 clear objectives
  - Swap tiles to match and generate resources
- - Craft elemental orbs via fixed recipes
+ - Auto-craft elemental orbs via fixed recipes
  - Spend orbs / trigger effects to progress objectives
  - Win on completing objectives before move limit (MVP)
  
@@ -61,9 +62,9 @@
  - Light + Air -> **Radiance Orb** (extra moves/time-like relief via progress)
  - Shadow + Earth -> **Curse Orb** (weaken boss shield / reduce blocker strength)
  
- ### How crafting works (fixed recipe)
+ ### How crafting works (fixed recipe, auto-craft)
  - Matching raw tiles charges their **element meter**
- - When two chosen meters reach threshold, player can craft the recipe into an orb
+ - When a recipe condition is met, the orb is auto-crafted onto the board
  - Orbs appear on board as a special tile and trigger when matched/activated
  
  ## Boss set-piece (objective-based)
