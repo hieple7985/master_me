@@ -34,4 +34,5 @@
 - Expand `ideas/apps/app-04-salon.md` into a structured VN opportunity one-pager (pain points, ICP, product options, MVP, monetization, GTM, validation, risks).
 - Choose `Studio Flow` as the brand name for the salon OS (barber-first) while keeping `Beauty Flow` as a separate spa brand (share core services under Option B).
 - Add a barber-first sales pitch section (ICP, offer, pricing, outreach script, objections, onboarding) to `ideas/apps/app-04-salon.md` for `Studio Flow`.
+- Add Option B shared core services checklist (B1 default, B2 optional) for `Studio Flow` + `Beauty Flow` to `ideas/apps/app-04-salon.md`.
 

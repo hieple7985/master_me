@@ -183,6 +183,51 @@ Chỉ nên làm khi đã có mạng lưới salon dùng OS đông và có dữ l
 - Import khách top 50-200 (tối thiểu: tên + số)
 - Set template nhắc lịch + follow-up
 
+## Phương án B (Studio Flow + Beauty Flow): checklist core services dùng chung
+
+Mục tiêu: 2 app/2 brand tách hẳn, nhưng dùng chung “engine” để không nhân đôi công sức.
+
+### B1 (default): share CRM + Messaging + Billing, booking tách
+
+Share:
+
+- Org/Branch/Staff: tài khoản, phân quyền, nhiều chi nhánh
+- Customer (CRM core): hồ sơ khách, tag/segment, lịch sử tương tác
+- Messaging: template, lịch nhắc, log gửi, giới hạn spam cơ bản
+- Billing: gói tháng, trial, invoice, trạng thái thanh toán
+- Audit: log thay đổi dữ liệu quan trọng
+
+Tách riêng:
+
+- Booking/Calendar: logic lịch hẹn, resource (ghế/giường/phòng), flow check-in/done
+- Vertical modules:
+  - Studio Flow: hoa hồng, tip, dịch vụ theo thợ
+  - Beauty Flow: liệu trình/phác đồ, tái liệu trình, hồ sơ chi tiết
+
+### B2 (optional): share thêm Booking core
+
+Khi nào chọn B2:
+
+- Beauty Flow và Studio Flow có thể dùng chung mô hình `Appointment`/`Resource` mà không cần custom quá nhiều
+- Bạn muốn báo cáo/CRM có lịch sử dịch vụ thống nhất từ cả 2 app
+
+Share thêm:
+
+- Appointment core: đặt lịch, trạng thái, thời lượng, hủy/no-show
+- Resource core: staff/room/chair (mỗi app map resource theo vertical)
+
+### Ranh giới data để không bị “đụng nhau”
+
+- Dùng chung: `Organization`, `Branch`, `Staff`, `Customer`, `MessageTemplate`, `MessageLog`, `Subscription`
+- Tách riêng: mọi thứ liên quan nghiệp vụ đặc thù (treatment plan, commission rules, product stock nâng cao)
+
+### Thứ tự migrate an toàn (khuyến nghị)
+
+- Bước 1: share Billing
+- Bước 2: share Customer/CRM
+- Bước 3: share Messaging
+- Bước 4: cân nhắc Booking core (chỉ khi cần, chuyển theo từng nhóm tiệm)
+
 ## Cách validate nhanh (không code nhiều)
 
 - Phỏng vấn 15-25 chủ tiệm, hỏi:
