@@ -389,6 +389,42 @@ Mục tiêu: trong 14 ngày có 5 tiệm dùng pilot và chốt tối thiểu 2 
 - “Giờ đông nhất: hh-hh | thợ top: A.”
 - “Tuần sau em đề xuất: nhắc lịch template mới + nhắn rebook nhóm khách 30 ngày chưa quay lại.”
 
+## Template tin nhắn (nhắc lịch + follow-up + rebook)
+
+Nguyên tắc:
+
+- Có tên tiệm + tên khách
+- Có giờ hẹn rõ ràng
+- Có 1 CTA duy nhất
+- Luôn cho khách cách trả lời nhanh (OK/Đổi giờ/Huỷ)
+
+### Nhắc lịch 24h
+
+“[Tiệm] xin nhắc lịch: [Tên khách] có lịch cắt tóc lúc [HH:MM] ngày [DD/MM]. Anh/chị reply: OK / Đổi giờ / Huỷ.”
+
+### Nhắc lịch 2h
+
+“[Tiệm] nhắc lịch: [Tên khách] còn 2 tiếng nữa tới lịch lúc [HH:MM]. Nếu kẹt giờ anh/chị nhắn để tiệm sắp xếp lại.”
+
+### Follow-up sau dịch vụ (cùng ngày)
+
+“[Tiệm] cảm ơn anh/chị [Tên khách] đã ghé hôm nay. Nếu hài lòng, anh/chị để lại 1 đánh giá giúp tiệm nhé: [Link].”
+
+### Rebook 30 ngày (khách chưa quay lại)
+
+“[Tiệm] nhắc nhẹ: anh/chị [Tên khách] đã ~[X] ngày chưa cắt tóc. Tuần này tiệm còn slot [2-3 khung giờ]. Anh/chị muốn đặt giờ nào?”
+
+### Win-back mềm (60-90 ngày)
+
+“[Tiệm] lâu quá chưa gặp anh/chị [Tên khách]. Nếu anh/chị muốn quay lại, tiệm ưu tiên sắp lịch nhanh trong tuần này. Anh/chị nhắn giờ rảnh giúp em.”
+
+## Quy tắc chống spam (cơ bản)
+
+- Không gửi broadcast hàng loạt nếu không có lý do rõ ràng (rebook/win-back)
+- Tối đa 2 tin/tuần/khách (trừ nhắc lịch)
+- Nếu khách trả lời STOP/Không nhận nữa: đưa vào danh sách chặn
+- Không gửi sau 21:00 hoặc trước 08:00
+
 ## Cách validate nhanh (không code nhiều)
 
 - Phỏng vấn 15-25 chủ tiệm, hỏi:
