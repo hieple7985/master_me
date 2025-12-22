@@ -38,7 +38,8 @@ Mục tiêu: “đã tay” như MOBA nhưng không quá tải thao tác.
 Chốt hướng: **Hybrid H1**
 
 - **1 hero active**: người chơi điều khiển trực tiếp (giống MOBA)
-  - Move: joystick/tap-to-move (tuỳ platform)
+  - Move (mobile): **tap-to-move**
+  - Move (PC/Steam): WASD hoặc click-to-move
   - Cast spell: tap để smart-cast, hold để aim (line/radius), release để cast
 - **1–3 hero phụ**: auto attack + đứng theo lane
   - Reposition realtime theo “anchor slots” (kéo portrait hero xuống ô/lane)
@@ -60,9 +61,19 @@ Nguyên tắc targeting:
 
 ### Grid + free moving (cách hiểu cụ thể)
 
-- Battlefield là lưới (ví dụ 6x10 hoặc 7x11 ô) để:
+- Battlefield là lưới theo **template** (không đổi kích thước tùy tiện) để:
   - đặt trap/turret/wall theo ô
   - preview AOE/beam “bám grid” dễ đọc
+- Grid size có thể thay theo map/chapter/difficulty nhưng nên nằm trong **vài template cố định** (để người chơi học được và để balance/telegraph ổn định):
+  - Small: **6x10** (dễ, nhịp nhanh)
+  - Standard: **7x11** (mặc định)
+  - Large: **8x12** (late game/challenge)
+
+Lý do không nên “động tuỳ ý” theo từng map:
+
+- Người chơi cần học “khoảng cách” để aim/đặt trap (đặc biệt trên mobile).
+- Boss telegraph + counter window phụ thuộc mật độ ô và thời gian di chuyển.
+- Vài template cố định vẫn đủ tạo đa dạng nhờ terrain layout, spawn gates, và objective nodes.
 - Di chuyển unit/hero theo **navmesh/flow-field**:
   - quái có hướng đi chính về base nhưng có thể “lệch” theo va chạm, push/pull, slow field
   - hero active có thể di chuyển tự do trong vùng cho phép
@@ -439,7 +450,7 @@ Kết luận: ý tưởng “tower defense + Magicka-like craft-in-combat + 2–
 
 ## Câu hỏi cần bạn chốt để mình refine tiếp
 
-- Grid arena chốt rồi; bạn muốn grid size mặc định: **6x10** hay **7x11**?
-- Bạn muốn base đặt ở **bottom-center** hay **bottom-left/right** (để tạo biến thể map)?
-- Bạn muốn hero active move trên mobile là **joystick** hay **tap-to-move** (vẫn giữ hold-aim-release cho spell)?
+- Grid size: bạn muốn mặc định là **7x11** và dùng template **6x10/8x12** cho map khó/dễ chứ? Lý do chọn template cố định thay vì dynamic sizing là để đảm bảo trải nghiệm chơi ổn định và dễ dự đoán.
+- Base position: mặc định **bottom-center**; về sau map variant có thể đổi để tạo thử thách.
+- Tap-to-move chốt rồi; bạn muốn thêm tùy chọn `double-tap` để dash/evade không?
 - Bạn thích tone truyện: **dark fantasy** hay **sci-fantasy** (cỗ máy nguyên tố)?

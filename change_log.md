@@ -20,3 +20,4 @@
 - Expand `ideas/games/game-02-spell-craft.md` with multi-entry horde spawn rhythm, terrain features (rocks/trees/bridges/trenches), and lightweight resource harvesting that feeds spell crafting.
 - Refine `ideas/games/game-02-spell-craft.md` resources to be A-dominant (spell augmentation) with a small B-lite layer (limited tactical actions in-run).
 - Expand `ideas/games/game-02-spell-craft.md` with adaptive difficulty rules, DLC phasing plan, and a more detailed narrative hook (factions + chapter beats).
+- Refine `ideas/games/game-02-spell-craft.md` controls to use mobile tap-to-move and define grid sizing via a small set of fixed templates (rather than fully dynamic sizing).
