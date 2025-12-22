@@ -37,4 +37,5 @@
 - Add Option B shared core services checklist (B1 default, B2 optional) for `Studio Flow` + `Beauty Flow` to `ideas/apps/app-04-salon.md`.
 - Add a practical 14-day plan (funnel, channels, scripts, tracking, pilot checklist) to acquire the first 5 barber shops for `Studio Flow` in `ideas/apps/app-04-salon.md`.
 - Add Option A pricing policy (14-day trial, no prepayment) plus a one-page cooperation offer and week-1 paid onboarding checklist to `ideas/apps/app-04-salon.md`.
+- Add KPI/metrics definitions and weekly report templates (full version + short 3-line Zalo version) to `ideas/apps/app-04-salon.md`.
 

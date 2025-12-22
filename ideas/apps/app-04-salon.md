@@ -339,6 +339,56 @@ Mục tiêu: trong 14 ngày có 5 tiệm dùng pilot và chốt tối thiểu 2 
 - Template nhắc lịch + follow-up (1 bản chuẩn)
 - Thiết lập KPI tối thiểu: no-show, số khách quay lại, doanh thu theo thợ
 
+## KPI/metrics + report templates (B -> A)
+
+### KPI (phiên bản đầy đủ - B)
+
+- Booking volume:
+  - số lịch đặt mới/tuần
+  - số lịch hoàn thành/tuần
+- No-show:
+  - tỉ lệ no-show = no-show / tổng lịch
+  - số lịch hủy trong 2h trước giờ
+- Utilization:
+  - tỉ lệ lấp đầy theo khung giờ (giờ cao điểm vs thấp điểm)
+- Revenue:
+  - doanh thu/tuần
+  - doanh thu theo thợ
+  - top dịch vụ
+- Retention (đơn giản):
+  - số khách quay lại trong 30 ngày
+  - số khách chưa quay lại > 30 ngày
+
+### Report tuần 1 (B)
+
+- Tình hình lịch:
+  - Lịch đặt: X
+  - Hoàn thành: Y
+  - No-show: Z (tỉ lệ: Z/X)
+- Nhân viên:
+  - Thợ top doanh thu: A
+  - Khung giờ đông nhất: hh-hh
+- Hành động đề xuất tuần 2:
+  - bật/điều chỉnh template nhắc lịch
+  - kêu gọi rebook cho nhóm khách 30 ngày chưa quay lại
+
+### Report tuần 2 (B)
+
+- So sánh tuần 2 vs tuần 1:
+  - No-show: giảm/tăng bao nhiêu %
+  - Lịch hoàn thành: tăng/giảm bao nhiêu
+- Nhóm khách cần chăm:
+  - danh sách 20 khách 30-45 ngày chưa quay lại
+- Hành động đề xuất:
+  - 1 chiến dịch nhắn rebook (mẫu 1)
+  - 1 ưu đãi nhỏ cho khung giờ thấp điểm
+
+### Bản nhắn Zalo 3 dòng (A)
+
+- “Tuần này tiệm có X lịch, no-show Z (Z/X).”
+- “Giờ đông nhất: hh-hh | thợ top: A.”
+- “Tuần sau em đề xuất: nhắc lịch template mới + nhắn rebook nhóm khách 30 ngày chưa quay lại.”
+
 ## Cách validate nhanh (không code nhiều)
 
 - Phỏng vấn 15-25 chủ tiệm, hỏi:
