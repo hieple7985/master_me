@@ -23,5 +23,6 @@
 - Refine `ideas/games/game-02-spell-craft.md` controls to use mobile tap-to-move and define grid sizing via a small set of fixed templates (rather than fully dynamic sizing).
 - Expand `ideas/games/game-03-elu-elements-forge.md` into a structured one-pager spec with confirmed direction, crafting recipes, boss template, and monetization assumptions, and refine direction (Element Forge title, auto-craft, cute/bright).
  - Refine `ideas/games/game-03-elu-elements-forge.md` crafting and go-to-market (2-slot recipe selection auto-craft, casual-friendly Ads + IAP, and lightweight LiveOps templates).
-- Expand `ideas/games/game-05-solomon-72-demonds.md` into a structured one-pager (decisions, scope, vibe pillars), and add highest win-rate PC-first release strategy plus global revenue forecast assumptions.
-- Expand `ideas/games/game-04-bike-race.md` into a structured one-pager for an isometric lap-based cyberpunk cat courier combat racer (cyber rides, light combat, premium low price), including roster, track list, solo timeline estimate, and global sales assumptions.
+ - Expand `ideas/games/game-05-solomon-72-demonds.md` into a structured one-pager (decisions, scope, vibe pillars), and add highest win-rate PC-first release strategy plus global revenue forecast assumptions.
+ - Expand `ideas/games/game-04-bike-race.md` into a structured one-pager for an isometric lap-based cyberpunk cat courier combat racer (cyber rides, light combat, premium low price), including roster, track list, solo timeline estimate, and global sales assumptions.
+ - Expand `ideas/games/game-04-bike-race.md` with a scope-cut MVP plan (4-6 months), break-even sensitivity model, and a premium mobile release checklist.

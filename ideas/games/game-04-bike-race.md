@@ -141,6 +141,66 @@ What moves the needle most (for premium):
 - Strong keyword positioning ("top-down combat racer", "isometric arcade racing")
 - 2–3 standout tracks that look unique in screenshots
 
+## MVP scope cut (4–6 months solo)
+Goal: ship a small but polished premium arcade package that proves retention and store conversion.
+
+Launch content target:
+- Tracks: 4 (1 boss event)
+- Riders: 3
+- Rides: 2
+- Weapons: 3 + 1 defense (shield)
+- Modes: Career (short), Time Trial, Ghost replay
+
+Hard cuts (launch):
+- No real-time PvP
+- No cosmetics store
+- No complex tuning parts (keep upgrades to 3–4 categories)
+
+Quality bars:
+- 60 FPS on mid-tier devices with scalable settings
+- Instant readability: pickups, hazards, target indicators
+- Race time: 2–4 minutes, fast restart
+
+## Cost model and break-even (solo)
+Inputs you can choose:
+- Your monthly burn (opportunity cost): B USD/month
+- Production time: T months
+- Tools/assets budget: A USD
+
+Total cost estimate: C = B*T + A
+
+Break-even unit estimate:
+- Units needed ≈ C / net_per_unit
+- Example net_per_unit: ~$1.30 ($1.99) / ~$1.95 ($2.99) / ~$2.60 ($3.99)
+
+Sensitivity quick table (units to break even):
+- If C = $30k:
+  - $1.99 net $1.30 → ~23k units
+  - $2.99 net $1.95 → ~16k units
+  - $3.99 net $2.60 → ~12k units
+- If C = $60k:
+  - $1.99 net $1.30 → ~46k units
+  - $2.99 net $1.95 → ~31k units
+  - $3.99 net $2.60 → ~23k units
+
+## Release checklist (premium mobile)
+- Store:
+  - App name, icon, screenshots, short trailer, keywords
+  - Clear hook in first screenshot (isometric combat racing readability)
+- Performance:
+  - Frame time stable, heat management, battery profile
+  - Graphics presets + dynamic resolution option
+- UX:
+  - Tutorial in <60 seconds
+  - Rebind/control scheme A/B, left-handed option
+  - Accessibility: color-blind friendly pickup colors
+- Reliability:
+  - Crash-free sessions, offline-first (no login required)
+  - Save/restore progression
+- Analytics (minimal):
+  - Track: first race completed, D1 return, level completion funnel
+  - Track: where players quit (race start, mid-lap, post-race UI)
+
 ## Art direction (2.5D HD)
 - Isometric camera ~30–35° tilt, slight dynamic zoom on boost.
 - Stylized PBR with strong rim neon lighting for silhouette readability.
