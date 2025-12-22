@@ -19,7 +19,7 @@
  ## Core loop
  - Enter level with 1-2 clear objectives
  - Swap tiles to match and generate resources
- - Auto-craft elemental orbs via fixed recipes
+ - Auto-craft elemental orbs via fixed recipes (2-slot recipe selection)
  - Spend orbs / trigger effects to progress objectives
  - Win on completing objectives before move limit (MVP)
  
@@ -63,8 +63,9 @@
  - Shadow + Earth -> **Curse Orb** (weaken boss shield / reduce blocker strength)
  
  ### How crafting works (fixed recipe, auto-craft)
- - Matching raw tiles charges their **element meter**
- - When a recipe condition is met, the orb is auto-crafted onto the board
+ - Player selects up to **2 active recipes** (2 recipe slots) before/within the level
+ - Matching raw tiles charges their **element meters**
+ - When a selected recipe condition is met, the orb is auto-crafted onto the board
  - Orbs appear on board as a special tile and trigger when matched/activated
  
  ## Boss set-piece (objective-based)
@@ -90,11 +91,18 @@
    - +5 moves on fail
    - Start-level booster
    - Daily bonus multiplier
+ - Keep interstitial ads minimal (or off) for MVP to protect retention
  - **IAP**:
-   - Starter pack (boosters + remove ads)
+   - Remove ads
+   - Starter pack (boosters)
    - Booster bundles
    - Optional: recipe cosmetic skins (late)
  - Avoid gacha/hero systems in MVP (scope + balance risk)
+
+ ## LiveOps (lightweight)
+ - Daily challenge level (fixed template + modifiers)
+ - Weekly boss event using the boss template (param + cosmetic variations)
+ - Recipe of the week (one crafted orb is highlighted with boosted feel)
  
  ## MVP scope (to ship fast)
  - 1 board type, 6 raw elements, 9 crafted orbs

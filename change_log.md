@@ -22,3 +22,4 @@
 - Expand `ideas/games/game-02-spell-craft.md` with adaptive difficulty rules, DLC phasing plan, and a more detailed narrative hook (factions + chapter beats).
 - Refine `ideas/games/game-02-spell-craft.md` controls to use mobile tap-to-move and define grid sizing via a small set of fixed templates (rather than fully dynamic sizing).
 - Expand `ideas/games/game-03-elu-elements-forge.md` into a structured one-pager spec with confirmed direction, crafting recipes, boss template, and monetization assumptions, and refine direction (Element Forge title, auto-craft, cute/bright).
+ - Refine `ideas/games/game-03-elu-elements-forge.md` crafting and go-to-market (2-slot recipe selection auto-craft, casual-friendly Ads + IAP, and lightweight LiveOps templates).
