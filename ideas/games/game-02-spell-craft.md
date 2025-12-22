@@ -52,10 +52,23 @@ Nguyên tắc targeting:
 ## Map & nhịp trận (vertical)
 
 - 1 màn = 2–4 phút.
-- 3 lane (mặc định), về sau mở 4 lane (để tăng độ sâu).
+- Map theo kiểu **arena grid** (gợi nhớ Clash Royale): battlefield chia ô để dễ đọc/đặt phép, nhưng unit/hero **di chuyển gần như tự do**.
+- Có thể bắt đầu với 3 “luồng” chính (soft lanes) để người chơi đọc nhanh, về sau tăng độ dày wave thay vì tăng số lane.
 - UI gợi ý:
   - Nửa trên: lane + telegraph.
   - Nửa dưới: 2–4 hero portraits (tap đổi hero) + 3–4 spell slots (tap cast) + nút craft.
+
+### Grid + free moving (cách hiểu cụ thể)
+
+- Battlefield là lưới (ví dụ 6x10 hoặc 7x11 ô) để:
+  - đặt trap/turret/wall theo ô
+  - preview AOE/beam “bám grid” dễ đọc
+- Di chuyển unit/hero theo **navmesh/flow-field**:
+  - quái có hướng đi chính về base nhưng có thể “lệch” theo va chạm, push/pull, slow field
+  - hero active có thể di chuyển tự do trong vùng cho phép
+- “Anchor slots” trở thành **Anchor Zones**:
+  - thả portrait hero vào 1 zone/ô -> hero chạy tới đó và giữ vị trí chiến đấu
+  - reposition vẫn realtime nhưng có wind-up/cooldown để không thành spam
 
 ## PC/Steam (chốt lựa chọn B: PC-native)
 

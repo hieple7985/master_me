@@ -16,3 +16,4 @@
 ## 2025-12-22
 - Expand `ideas/games/game-02-spell-craft.md` into a structured one-pager for a vertical mobile PvE lane-defense game featuring elemental drops, in-combat spell crafting grammar, run reset + meta progression, story hook, and 2026 USP options.
 - Refine `ideas/games/game-02-spell-craft.md` with MOBA-like hybrid controls, 1-click guided crafting UI, Steam/PC landscape expanded HUD option, Steam Cloud save note, and Steam Early Access checklist.
+- Refine `ideas/games/game-02-spell-craft.md` map direction to a Clash Royale-like grid arena with mostly free movement (soft lanes + anchor zones).
