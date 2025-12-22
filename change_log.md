@@ -31,3 +31,7 @@
 - Expand App #11 into a structured deep-dive spec in `ideas/apps/app-11-zalo-crm.md`.
 - Refine App #11 summary with deeper modules/workflow/integration notes in `ideas/IDEAS_APP.md`.
 - Add new app stubs `ideas/apps/app-03-i-need.md` and `ideas/apps/app-04-salon.md`.
+- Expand `ideas/apps/app-04-salon.md` into a structured VN opportunity one-pager (pain points, ICP, product options, MVP, monetization, GTM, validation, risks).
+- Choose `Studio Flow` as the brand name for the salon OS (barber-first) while keeping `Beauty Flow` as a separate spa brand (share core services under Option B).
+- Add a barber-first sales pitch section (ICP, offer, pricing, outreach script, objections, onboarding) to `ideas/apps/app-04-salon.md` for `Studio Flow`.
+
