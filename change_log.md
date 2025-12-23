@@ -51,3 +51,4 @@
 - Split/reorganize tools notes into `ideas/tools/01_games.md` (game tools + tech stack + prioritized ideas) and `ideas/tools/02_others.md` (top global cheap tools + reordered by unique/feasible).
 - Remove `ideas/tools/hack_case_studies.md` after renaming/restructuring.
 - Add placeholders `projects_ideas_priority.md` and `ideas/apps/app-21-logistic-taubien.md`.
+- Update `projects_ideas_priority.md` to prioritize non-web3 projects (Zalo CRM, Field Service Mgmt, and Ho So Chuan).
