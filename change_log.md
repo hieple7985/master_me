@@ -45,3 +45,4 @@
 - Expand `ideas/apps/app-20-field-service-mgmt.md` into a structured deep-dive one-pager (ICP, pain points, MVP scope, core modules, workflow, data model, integrations, pricing, KPI, moat, risks, and 14-day GTM experiment).
 - Add RBAC, SLA policy, and automation/routing rules sections to `ideas/apps/app-20-field-service-mgmt.md`.
 - Add a post-MVP Roadmap (Phase 2/3) section to `ideas/apps/app-20-field-service-mgmt.md`.
+- Expand `ideas/apps/app-03-i-need.md` into a Global-first one-pager (problem/solution, Android-first MVP, anti-spam, idea-only conversation scope, pricing) and add ready-to-use cold outreach scripts, pilot proposal terms, and a week-1 outbound checklist.
