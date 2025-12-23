@@ -118,96 +118,127 @@ The safest 2026 directions tend to be:
  
 The revenue ranges below are rough estimates (gross revenue per month) once you have traction.
 
-### Idea list (10–20)
-1) **Dota 2 replay coach (post-game)**
-   - Game: Dota 2
-   - Model: freemium + $5–15/mo; team plan $50–300/mo
-   - Revenue: ~$1k–30k/mo
+### Tech stack 2026 (để làm game tools “đúng luật”, dễ ship)
+Guiding rule: **use public data, replays, VODs, and official APIs**. Avoid anything that reads live client internals or automates gameplay.
+
+- **Frontend (web)**
+  - Next.js (React) + TypeScript
+  - TailwindCSS + shadcn/ui
+  - TanStack Query (data fetching), TanStack Table (analytics tables)
+  - Charts: ECharts / Recharts
  
-2) **Dota 2 draft room for teams (private notes + matchup matrix)**
-   - Game: Dota 2
-   - Model: B2B teams/academies
-   - Revenue: ~$500–20k/mo
+- **Backend API**
+  - FastAPI (Python) or NestJS (Node)
+  - REST for public endpoints; optional GraphQL for complex dashboards
  
-3) **CS2 demo analytics (entry/utility/trade efficiency) (post-match)**
-   - Game: CS2
-   - Model: subscription + coach seats
-   - Revenue: ~$2k–50k/mo
+- **Data ingestion & jobs**
+  - Queue: Redis + BullMQ (Node) or RQ/Celery (Python)
+  - Workers for replay parsing, VOD processing, scheduled data pulls
+  - Object storage: S3-compatible (Cloudflare R2 / AWS S3)
  
-4) **Valorant VOD tagging + coach report generator**
-   - Game: Valorant
-   - Model: SaaS subscription; B2B for academies
-   - Revenue: ~$1k–40k/mo
+- **Database**
+  - Postgres (primary)
+  - Optional: ClickHouse (heavy analytics) or DuckDB (batch analytics offline)
  
-5) **Apex / Fortnite highlight generator (VOD/replay-based)**
-   - Game: Apex, Fortnite
-   - Model: creator subscription
-   - Revenue: ~$2k–80k/mo
+- **Auth & billing**
+  - Auth: Auth.js (NextAuth) or Clerk
+  - Billing: Stripe subscriptions
  
-6) **Tournament ops dashboard (bracket, check-in, assets, penalties)**
+- **Observability & ops**
+  - Sentry (errors), OpenTelemetry (tracing), structured logs
+  - Hosting: Vercel (frontend) + Fly.io/Render (API/workers) or all-in-one on Fly.io
+  - CI: GitHub Actions
+ 
+- **ML / CV (nếu làm VOD/highlight)**
+  - PyTorch + ONNX Runtime (inference)
+  - ffmpeg pipeline for media processing
+  - Keep it offline/post-processing, not in-match assistance
+
+### Idea list (prioritize easiest + fastest monetization)
+1) **Tournament ops dashboard (bracket, check-in, assets, penalties)**
    - Game: multi-game
    - Model: per-event license + white-label
    - Revenue: ~$1k–100k+/mo (seasonal)
  
-7) **Caster/broadcast overlay toolkit (rosters, lower-thirds, stats)**
+2) **Caster/broadcast overlay toolkit (rosters, lower-thirds, stats)**
    - Game: Dota 2, CS2, Valorant
    - Model: subscription or one-time license + support
    - Revenue: ~$500–50k/mo
  
-8) **Scrim manager (Discord + web) (schedule, notes, replay links)**
+3) **Scrim manager (Discord + web) (schedule, notes, replay links)**
    - Game: multi-game
    - Model: team subscription
    - Revenue: ~$200–20k/mo
  
-9) **Patch/meta tracker + paid newsletter**
+4) **Patch/meta tracker + paid newsletter**
    - Game: Dota 2, LoL, Valorant
    - Model: $5–10/mo + sponsorship
    - Revenue: ~$500–25k/mo
  
-10) **LFG/stack finder with reputation + moderation tooling**
-    - Game: Dota 2, Valorant, LoL
-    - Model: freemium + premium + ads
-    - Revenue: ~$300–30k/mo
+5) **Discord bot: match summaries + reminders (API-based)**
+   - Game: Dota 2/CS2/others (depending on available data)
+   - Model: freemium + server subscription
+   - Revenue: ~$200–10k/mo
  
-11) **Coaching marketplace (booking + payments) (take-rate)**
-    - Game: multi-game
-    - Model: 10–20% take rate + coach SaaS
-    - Revenue: ~$1k–200k/mo
+6) **Dota 2 draft room for teams (private notes + matchup matrix)**
+   - Game: Dota 2
+   - Model: B2B teams/academies
+   - Revenue: ~$500–20k/mo
  
-12) **Steam economy tracker (alerts/portfolio) (policy-dependent)**
-    - Game: CS2 items, Steam market
-    - Model: premium analytics + affiliate
-    - Revenue: ~$1k–100k/mo
+7) **Dota 2 replay coach (post-game)**
+   - Game: Dota 2
+   - Model: freemium + $5–15/mo; team plan $50–300/mo
+   - Revenue: ~$1k–30k/mo
  
-13) **Replay pack curation + labeling for academies**
+8) **CS2 demo analytics (entry/utility/trade efficiency) (post-match)**
+   - Game: CS2
+   - Model: subscription + coach seats
+   - Revenue: ~$2k–50k/mo
+ 
+9) **Valorant VOD tagging + coach report generator**
+   - Game: Valorant
+   - Model: SaaS subscription; B2B for academies
+   - Revenue: ~$1k–40k/mo
+ 
+10) **Apex / Fortnite highlight generator (VOD/replay-based)**
+    - Game: Apex, Fortnite
+    - Model: creator subscription
+    - Revenue: ~$2k–80k/mo
+ 
+11) **Replay pack curation + labeling for academies**
     - Game: Dota 2, CS2
     - Model: subscription or per-pack sale
     - Revenue: ~$500–30k/mo
  
-14) **Personal performance journal + session review (non-invasive)**
-    - Game: multi-game
-    - Model: mobile/web subscription
-    - Revenue: ~$500–20k/mo
- 
-15) **Custom game / UGC mode with AI bots (in supported modes)**
-    - Game: Dota 2 Arcade, Fortnite Creative/UEFN, Roblox
-    - Model: creator payouts + cosmetics + sponsors
-    - Revenue: ~$0–500k+/mo (hit-driven)
- 
-16) **QA automation bot for studios (not public matchmaking)**
-    - Game: internal (game dev)
-    - Model: B2B contract
-    - Revenue: ~$3k–100k+/mo
- 
-17) **Esports scouting dashboard (team-only)**
+12) **Esports scouting dashboard (team-only)**
     - Game: Dota 2, CS2, Valorant
     - Model: B2B license
     - Revenue: ~$500–50k/mo
  
-18) **Discord bot: match summaries + reminders (API-based)**
-    - Game: Dota 2/CS2/others (depending on available data)
-    - Model: freemium + server subscription
-    - Revenue: ~$200–10k/mo
+13) **Coaching marketplace (booking + payments) (take-rate)**
+    - Game: multi-game
+    - Model: 10–20% take rate + coach SaaS
+    - Revenue: ~$1k–200k/mo
+ 
+14) **Steam economy tracker (alerts/portfolio) (policy-dependent)**
+    - Game: CS2 items, Steam market
+    - Model: premium analytics + affiliate
+    - Revenue: ~$1k–100k/mo
+ 
+15) **Personal performance journal + session review (non-invasive)**
+    - Game: multi-game
+    - Model: mobile/web subscription
+    - Revenue: ~$500–20k/mo
+ 
+16) **Custom game / UGC mode with AI bots (in supported modes)**
+    - Game: Dota 2 Arcade, Fortnite Creative/UEFN, Roblox
+    - Model: creator payouts + cosmetics + sponsors
+    - Revenue: ~$0–500k+/mo (hit-driven)
+ 
+17) **QA automation bot for studios (not public matchmaking)**
+    - Game: internal (game dev)
+    - Model: B2B contract
+    - Revenue: ~$3k–100k+/mo
  
 ## 2026: còn “đất” cho bot farming ARPG không?
 If you mean bots that automate gameplay to farm currency/loot/accounts in live servers (Diablo-like ARPGs), there is usually still demand, but it is a **high-risk, high-churn** space.
