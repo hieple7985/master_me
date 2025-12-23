@@ -41,3 +41,5 @@
 - Add messaging templates (24h/2h reminders, follow-up, rebook, win-back) and basic anti-spam rules to `ideas/apps/app-04-salon.md`.
 - Add a solo week 0-2 execution playbook and a barber-to-nail expansion checklist to `ideas/apps/app-04-salon.md`.
 
+## 2025-12-23
+- Expand `ideas/apps/app-20-field-service-mgmt.md` into a structured deep-dive one-pager (ICP, pain points, MVP scope, core modules, workflow, data model, integrations, pricing, KPI, moat, risks, and 14-day GTM experiment).
