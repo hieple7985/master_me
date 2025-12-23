@@ -1,4 +1,4 @@
-# app-05: Kế toán Compliance Hub (B2C-first) + Lead Router cho dịch vụ
+# app-05: Hồ Sơ Chuẩn – Thuế & Kế toán
  
  ## Tóm tắt
  
@@ -7,6 +7,8 @@
  - Tự chuẩn bị hồ sơ đúng (checklist + timeline + danh mục giấy tờ)
  - Lưu trữ giấy tờ và nhắc hạn nghĩa vụ
  - Khi cần: bấm 1 nút chuyển sang dịch vụ (agency) với hồ sơ đã chuẩn hoá
+
+ Định vị: Checklist đúng – đủ hồ sơ. Thiếu gì biết ngay.
  
  Mục tiêu: tạo doanh thu ổn định dài hạn bằng subscription + tăng doanh thu lớn bằng lead chuyển dịch vụ (giải thể/quyết toán/BHXH).
  
@@ -27,18 +29,18 @@
  
  ## Ngách kiếm tiền nhanh (Phase 1)
  
- ### Module A: Giải thể / tạm ngừng / đóng MST (Wizard + Checklist)
+ ### Module A: Hồ Sơ Chuẩn - Giải thể / Tạm ngừng / Đóng MST
  - Wizard 10-20 câu hỏi để phân loại tình huống.
  - Xuất checklist + timeline + danh mục giấy tờ theo case.
  - Portal upload giấy tờ cho khách, báo thiếu, chuẩn hoá tên file.
  - Nút “cần làm trọn gói” -> gửi lead + bộ hồ sơ đã gom.
  
- ### Module B: Nhắc hạn + thu thập chứng từ (Evidence Hub)
+ ### Module B: Hồ Sơ Chuẩn - Nhắc hạn + Thu thập chứng từ
  - Lịch nghĩa vụ theo chu kỳ (tháng/quý/năm) + nhắc hạn.
  - Checklist chứng từ cần nộp/chuẩn bị.
  - Dashboard “thiếu chứng từ” theo tháng/quý.
  
- ### Module C (mở sau): BHXH - lao động
+ ### Module C (mở sau): Hồ Sơ Chuẩn - BHXH - Lao động
  - Checklist tăng/giảm/chốt sổ + nhắc hạn + kho hồ sơ nhân sự.
  
  ## Sản phẩm (MVP) - 6 đến 10 tuần (solo)
