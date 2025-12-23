@@ -91,6 +91,47 @@
   - Accounting/ERP
     - Export CSV; API/webhook để đồng bộ đơn/hoá đơn (phase 3)
 
+- **RBAC (phân quyền tối thiểu để triển khai thật)**
+  - Admin
+    - Quản lý users/roles, cấu hình catalog dịch vụ, mẫu biên bản, policy SLA, tích hợp
+  - Dispatcher/Operations
+    - Tạo/schedule/assign job, đổi trạng thái, điều phối lại, xem dashboard SLA
+  - Technician
+    - Xem job được assign, check-in/out, upload ảnh, checklist, đề xuất phát sinh
+    - Không được xem toàn bộ doanh thu công ty (chỉ xem job của mình)
+  - Accounting/Finance
+    - Xem/đối soát payment, công nợ, xuất invoice/biên bản, export báo cáo
+  - Read-only/Owner
+    - Xem dashboard tổng, KPI, audit trail
+
+- **SLA policy (đủ dùng cho SME nhưng mở rộng được)**
+  - SLA events
+    - First response: từ lúc tạo job/ticket → lần đầu xác nhận/chốt lịch
+    - Arrival window: đến đúng khung giờ hẹn (scheduled window)
+    - Resolution: từ lúc check-in → completed
+  - Business hours
+    - Working hours theo tenant; rule khác nhau ngày nghỉ/lễ
+  - Severity/priority
+    - P1/P2/P3 map theo loại việc (sửa gấp, bảo hành, bảo trì)
+  - Breach handling
+    - Cảnh báo dispatcher khi gần breach
+    - Escalation lên trưởng ca khi breach
+    - Lý do trễ bắt buộc (traffic/khách đổi lịch/thiếu vật tư/không liên lạc được)
+
+- **Automation & routing rules (để giảm tải điều phối)**
+  - Auto-tag
+    - Theo nguồn (Zalo/form/phone), loại dịch vụ, khu vực, asset model
+  - Auto-assign (rule-based)
+    - Theo khu vực (geofence/quận), kỹ năng (skill tags), ca trực
+    - Round-robin trong nhóm kỹ thuật cùng skill
+    - Đổi người nếu technician không acknowledge trong X phút
+  - Auto-schedule
+    - Đề xuất time slots theo lịch rảnh + buffer di chuyển (phase 2 nếu có ETA)
+  - Customer comms
+    - Tin nhắn nhắc lịch T-24h/T-2h, gửi link theo dõi “kỹ thuật đang tới”, gửi biên bản sau hoàn tất
+  - Quality gates
+    - Không cho close nếu thiếu ảnh/chữ ký/checklist item bắt buộc
+
 - **Pricing gợi ý (để chốt nhanh)**
   - Starter
     - Theo số kỹ thuật active/tháng (bundle 5–10)
