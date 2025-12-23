@@ -44,3 +44,4 @@
 ## 2025-12-23
 - Expand `ideas/apps/app-20-field-service-mgmt.md` into a structured deep-dive one-pager (ICP, pain points, MVP scope, core modules, workflow, data model, integrations, pricing, KPI, moat, risks, and 14-day GTM experiment).
 - Add RBAC, SLA policy, and automation/routing rules sections to `ideas/apps/app-20-field-service-mgmt.md`.
+- Add a post-MVP Roadmap (Phase 2/3) section to `ideas/apps/app-20-field-service-mgmt.md`.

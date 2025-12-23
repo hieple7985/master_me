@@ -168,3 +168,24 @@
     - 2–5 triệu/tháng, triển khai 3 giờ, đo KPI: giảm missed appointment 30% hoặc rút “days to cash” 20%
   - Kênh
     - Hội nhóm Zalo/Facebook ngành kỹ thuật, đơn vị cung cấp vật tư/đại lý, referral kỹ thuật trưởng nhóm
+
+- **Roadmap (sau khi MVP chạy ổn)**
+  - Phase 2: tăng hiệu suất điều phối + giảm lỗi onsite
+    - Route/ETA
+      - Route suggestion theo cụm job trong ngày + ETA update cho khách
+    - Inventory nhẹ
+      - Van stock theo kỹ thuật + xuất/nhập vật tư theo job
+      - Cảnh báo thiếu vật tư hay dùng theo loại lỗi/asset model
+    - Warranty/serial nâng cao
+      - Gắn job theo asset/serial; cảnh báo job trùng lỗi trong N ngày
+    - Templates theo ngành
+      - Checklist/biên bản theo ngành + rule “bắt buộc ảnh” theo loại việc
+  - Phase 3: mở rộng revenue + tích hợp hệ sinh thái
+    - Contracts
+      - Gói bảo trì định kỳ (PM) + lịch định kỳ + renewals
+    - eInvoice & accounting integrations
+      - Đồng bộ hoá đơn/phiếu thu; mapping danh mục dịch vụ; webhooks
+    - Customer portal
+      - Trang tra cứu lịch sử bảo hành/biên bản, đặt lịch, theo dõi trạng thái
+    - Analytics
+      - Dashboard theo khu vực/kỹ thuật, cost-to-serve, first-time-fix theo asset model
