@@ -48,3 +48,5 @@
 - Expand `ideas/apps/app-03-i-need.md` into a Global-first one-pager (problem/solution, Android-first MVP, anti-spam, idea-only conversation scope, pricing) and add ready-to-use cold outreach scripts, pilot proposal terms, and a week-1 outbound checklist.
 - Expand `ideas/apps/app-05-ke-toan.md` into a structured one-pager spec for a VN accounting compliance SaaS (B2C-first), including MVP scope, pricing, funnel, KPI, 12-month roadmap, and revenue scenarios.
 - Expand `ideas/apps/app-06-inventory-kho.md` into a structured one-pager spec (ICP, offer, pricing, demo script, remote onboarding playbook, KPI, 12-month revenue target, roadmap, moat, and risks).
+- Add `ideas/tools/hack_case_studies.md` (public case studies for cheat/bot ecosystems, 2026 legal tool ideas, and a non-operational ARPG bot-farming deep-dive for WoW/PoE).
+- Add placeholders `projects_ideas_priority.md` and `ideas/apps/app-21-logistic-taubien.md`.
