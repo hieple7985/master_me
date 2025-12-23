@@ -130,9 +130,47 @@
  - Playbook/Checklist chất lượng theo tình huống thực tế + tối ưu hoá “chuẩn bị hồ sơ” (thứ người dùng sẵn sàng trả tiền).
  - Dữ liệu vận hành: các điểm kẹt phổ biến, thời gian xử lý, missing docs patterns.
  - Network effect nhẹ: càng nhiều case -> càng refine wizard và template.
+
+ ## Bối cảnh cạnh tranh (để né cạnh tranh trực diện)
+
+ - Các suite kế toán/ERP phổ biến: MISA AMIS/SME, FAST Accounting, BRAVO, EFFECT, LINKQ, SIMBA.
+ - Các hệ hoá đơn điện tử: meInvoice, Viettel SInvoice, VNPT Invoice, và các nhà cung cấp khác.
+ - Các nền tảng nhà nước: eTax Mobile, các cổng dịch vụ công.
+
+ Định vị sản phẩm để thắng:
+ - Không làm phần mềm ghi sổ/hạch toán full.
+ - Không cạnh tranh phát hành hoá đơn điện tử.
+ - Tập trung vào “chuẩn bị hồ sơ” theo tình huống: wizard -> checklist -> kho giấy tờ -> nhắc hạn -> bàn giao dịch vụ.
  
  ## Rủi ro & giảm rủi ro
  
  - Pháp lý/thay đổi quy định: version hoá playbook, cập nhật nhanh theo đợt.
  - Dữ liệu nhạy cảm: phân quyền, audit log, xoá dữ liệu theo yêu cầu, backup.
  - Kỳ vọng người dùng: định vị “compliance assistant + hồ sơ”, không hứa hẹn thay thế kế toán.
+
+ ### Rủi ro pháp lý & truyền thông
+ - Không thay thế tư vấn pháp lý/kế toán: hiển thị disclaimer rõ ràng trên kết quả wizard và PDF.
+ - Rủi ro tư vấn sai do case đặc thù: yêu cầu wizard thu đủ thông tin tối thiểu và gắn nhãn mức độ tự tin (basic/complex).
+ - Rủi ro khác biệt theo địa phương/chi cục: playbook có biến thể theo địa phương khi đủ dữ liệu, log lại case “bị trả hồ sơ” để cập nhật.
+
+ ### Rủi ro dữ liệu (PII/giấy tờ doanh nghiệp)
+ - Quyền riêng tư: mặc định tối thiểu hoá dữ liệu, chỉ thu thứ cần để tạo checklist và handoff.
+ - Chính sách lưu trữ: cho phép người dùng xoá vĩnh viễn hồ sơ/giấy tờ.
+ - An toàn truy cập: bắt buộc xác thực, phân quyền theo vai trò (B2C/B2B), ghi log tải xuống.
+ - Giảm thiểu thiệt hại: backup định kỳ + cơ chế khôi phục.
+
+ ### Rủi ro vận hành (solo)
+ - Quá tải support: ưu tiên self-serve + FAQ theo từng bước + mẫu trả lời nhanh.
+ - Nút nghẽn fulfill dịch vụ: chuẩn hoá handoff và SLA với agency, giới hạn lead theo năng lực xử lý.
+ - Rủi ro marketing: không phụ thuộc 1 kênh; SEO làm nền, ads dùng để test.
+
+ ### Rủi ro cạnh tranh
+ - Suite lớn copy tính năng: giữ lợi thế ở playbook/tình huống và dữ liệu missing-docs; tăng tốc cập nhật theo phản hồi hồ sơ bị trả.
+ - Giá rẻ/miễn phí: phân tầng gói; free cho wizard preview, trả tiền cho checklist đầy đủ + PDF + kho giấy tờ + nhắc hạn.
+
+ ## Nguyên tắc thiết kế sản phẩm (để dễ bán B2C)
+ 
+ - Time-to-value: 5 phút ra kết quả.
+ - Ngôn ngữ đơn giản, tránh thuật ngữ kế toán.
+ - Mọi bước đều có “đầu ra”: checklist, timeline, danh mục giấy tờ, mẫu file naming.
+ - Khi người dùng mắc kẹt: 1 nút “cần người làm hộ” với hồ sơ đã chuẩn hoá.
