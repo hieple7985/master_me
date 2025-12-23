@@ -47,3 +47,4 @@
 - Add a post-MVP Roadmap (Phase 2/3) section to `ideas/apps/app-20-field-service-mgmt.md`.
 - Expand `ideas/apps/app-03-i-need.md` into a Global-first one-pager (problem/solution, Android-first MVP, anti-spam, idea-only conversation scope, pricing) and add ready-to-use cold outreach scripts, pilot proposal terms, and a week-1 outbound checklist.
 - Expand `ideas/apps/app-05-ke-toan.md` into a structured one-pager spec for a VN accounting compliance SaaS (B2C-first), including MVP scope, pricing, funnel, KPI, 12-month roadmap, and revenue scenarios.
+- Expand `ideas/apps/app-06-inventory-kho.md` into a structured one-pager spec (ICP, offer, pricing, demo script, remote onboarding playbook, KPI, 12-month revenue target, roadmap, moat, and risks).
