@@ -56,6 +56,31 @@
 - **Nhóm trucking vừa/nhỏ quanh cảng**
   - Phổ biến mô hình điều phối thủ công, khó chuẩn hoá SLA, giá biến động theo mùa/điều kiện cổng/bãi.
 
+### 5.1 Đối thủ đáng chú ý: LOGIVAN (2024–2025)
+- **Định vị**
+  - Digital freight network / logistics solutions cho shipper, đồng thời giúp truckers/fleet owners có đơn đều. (Nguồn: logivan.com)
+- **Phạm vi dịch vụ thể hiện trên website**
+  - Network khoảng **20.000 trucks**; từ **port container haulage** đến warehouse transfer và nationwide distribution. (Nguồn: https://logivan.com/home-24)
+  - Có các mô hình dịch vụ kiểu 3PL/enterprise: **Contract Logistics (LOGIVAN 3PL)** với cam kết SLA, “stable pricing”; **Spot shipment**; **Dedicated fleet** (DCC/DTM). (Nguồn: https://logivan.com/solutions)
+- **Năng lực công nghệ nổi bật (shipper-facing)**
+  - “Shipment visibility” theo GPS + timestamps + dwell-time + ePOD; analytics (FreightView™); tối ưu Milk-Run™; CO2 tracking (Scope3). (Nguồn: https://logivan.com/technology)
+  - Hệ thống FreightOS™: booking theo lô/batch, ETA/delay alerts, chia sẻ tracking link, kho ePOD, và có đề cập API/integration + auto bill calculation. (Nguồn: https://logivan.com/technology)
+- **Hướng đi “green logistics”**
+  - Truyền thông EV truck, đo lường emissions theo NĐ 06/2022 và framework GLEC; launch EV trucks (24/9/2024). (Nguồn: https://logivan.com/logivanelectrictruck)
+
+### 5.2 LOGIVAN vs ContGo Fleet (đường đánh Q1/2026)
+- **Vùng trùng**
+  - Cả 2 đều chạm vào: điều phối vận tải đường bộ, GPS visibility, ePOD, và tối ưu utilisation.
+- **Khác biệt cốt lõi**
+  - LOGIVAN thể hiện mạnh ở **shipper/enterprise solution** + network capacity + SLA/3PL.
+  - ContGo Fleet dự kiến đi theo hướng **fleet-ops tool** cho đội xe vừa/nhỏ (10–50 xe): dispatch theo container, POD chứng từ, đối soát công nợ — “xài được ngay” ở tầng vận hành hằng ngày.
+- **Khoảng trống có thể khai thác (nếu đúng thị trường Hải Phòng)**
+  - Đội xe quanh cảng thường cần “tối ưu vận hành nội bộ + đối soát” hơn là một nền tảng marketplace/3PL: quản lý job theo cont, quy trình POD/EIR, bảng kê phụ phí, khoá kỳ công nợ.
+  - “Local ops” rất đặc thù cảng (phiếu/EIR/điểm lấy-trả rỗng/depot, phát sinh chờ cổng/bãi) — thường là nơi các giải pháp enterprise khó cá thể hoá nhanh.
+- **Hàm ý chiến lược**
+  - Tránh đối đầu trực diện ở bài toán “mạng lưới xe + giá vận tải toàn quốc”.
+  - Tập trung wedge: **dispatch + ePOD chứng từ cảng + billing/đối soát** cho fleet; sau đó mở portal cho khách của fleet.
+
 ## 6) Pain points điển hình (đặc thù Hải Phòng/cảng biển)
 - **Tắc nghẽn & thời gian chờ**
   - Chờ cổng, chờ nâng hạ, chờ lệnh/phiếu, phát sinh demurrage/detention.
